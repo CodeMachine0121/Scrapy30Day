@@ -19,7 +19,7 @@ with open(MOCK_DATA,newline='') as csv_file:
 #Dict Writer
 with open(MOCK_DATA,'a',newline='') as csvfile:
     fieldnames = ['James','Jimy','fdf','df','fd']
-    writer = csv.DictWriter(csvfile,fieldnames,delimiter=',',quotechar='"') 
+    writer = csv.DictWriter(csvfile,fieldnames,delimiter=',',quotechar='"')
     writer.writerow({
         'James':4,
         'Jimy':'Amy',
