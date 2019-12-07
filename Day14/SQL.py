@@ -4,7 +4,7 @@ from datetime import datetime
 host = "localhost"
 user = "postgres"
 dbname = "Scrapy"
-password = "James.2019"
+password = "XXXX"
 
 conn_string = f'host={host} user={user} dbname={dbname} password={password}'
 conn = psycopg2.connect(conn_string)
