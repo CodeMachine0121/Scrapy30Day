@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)https://ithelp.ithome.com.tw/articles/10222376 -->
+<html lang="zh-TW"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button[not:disabled]:hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel[not:disabled]:hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger[not:disabled]:hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;-webkit-transition:border-color .2s;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);-webkit-transition:background .2s;transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:scroll;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;-webkit-transition:opacity .3s;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;-webkit-transition:opacity .2s,-webkit-transform .3s;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+    
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>【Day 14】資料持久化 - RDBMS (1/4) - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</title>
+
+<meta name="description" content="寫完蒐集資料的程式後，接著要選擇儲存資料的方式，通常會選擇關聯式資料庫(RDBMS)或非關聯式資料庫(NoSQL) ，應該比較少人會存成本地檔案吧。這個系列會分別選擇 PostgreSQL 和 Mon...">
+<meta name="keywords" content="iT邦幫忙,iThome">
+<meta name="author" content="iThome">
+<meta property="og:site_name" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:url" content="https://ithelp.ithome.com.tw/articles/10222376">
+<meta property="og:type" content="website">
+<meta property="og:title" content="【Day 14】資料持久化 - RDBMS (1/4) - iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天">
+<meta property="og:image" content="https://ithelp.ithome.com.tw/upload/images/20190929/20107875q3AZYQdEqi.png">
+<meta property="og:description" content="寫完蒐集資料的程式後，接著要選擇儲存資料的方式，通常會選擇關聯式資料庫(RDBMS)或非關聯式資料庫(NoSQL) ，應該比較少人會存成本地檔案吧。這個系列會分別選擇 PostgreSQL 和 Mon...">
+<meta property="fb:app_id" content="137875859607921">
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://ithelp.ithome.com.tw/storage/favicons/manifest.json">
+<link rel="mask-icon" href="https://ithelp.ithome.com.tw/storage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://ithelp.ithome.com.tw/storage/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/font-awesome.min.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/simplemde.min.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.min.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/google.css">
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/style.css">
+<!-- highlight -->
+<link rel="stylesheet" href="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/railscasts.css">
+<!-- end -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--messenger css-->
+    <style type="text/css">
+:root div[class="span4"],
+:root .span4:nth-child(8),
+:root .span4:nth-child(5),
+:root .ad-text-in-middle,
+:root #ad-on-top
+{ display: none !important; }</style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:12px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:15px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:19px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:13px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:13px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:17px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><style type="text/css">
+:root .footer > #box[style="width:100%;height:100%;position:fixed;top:0"],
+:root .container > .ads,
+:root .container > a.mid-wrapper
+{ display: none !important; }</style><style type="text/css" media="all" id="my">                                                                               
+                .ogdlpmhglpejoiomcodnpjnfgcpmgale_default, body, html {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuUlEQVRIS2O88f7Dn+/ff0xhey9epq3N+IuByoDx4M27/0+evPjN19cxS1NQcCGVzWdg3Hruyv/oiDyGFcsnvleWETNVFRe/S01LGLeev/Lf2zOJgfnTV4ZdJ9beVVSSsVbi4XlJLUsgFgRnMTC8eMugp6PO0DW1Ybe8ukKkJh/fW2pYArEgNAdsAfOfvwypuXH/skuSluiKi8VT14JfvxkYnr8Bmzl1YTeDm7dT7NL+nmUNDQ3/KLEI4QOQKY+eMzD8hxjX3Fv5NjwpJEKNh2cP9Sz48JmB4eMXsHmiYsIM7ZPqXtg7W9ioCgiQnbJQffD7DwPDs9dwBzt52DK09tfc5RYRMNUTEHhPjk9QLfj7l4Hh5TsGBpBFUBAa48/QOrFm/qcvX3JMpKS+kWoJqgUg3UjBBDPMzcfx15QFnaVq/PyTKLfg81cGhvef4JENMpCdg52hpDabISQ2yMdQUnQrKZZg+uDvPwaGF28YGP78RTFHQVmOYfKCri+a2ip+Kry8+4m1BNMCkE5QRCPFA8wwaVlJhn3nNl1k+vvbR1VY+AkxlmC34PsPBoZX2BMNyCcL1kyZw8bPlWclK/udkCXYLQDpevgcq14mZiaGkCg/hqLanIkWirIFZFuwZUk/w+uXbxgunr3CcOH0ZYaL564yvH/3AWweBwc7Q9/s1n/OHvYd6gJ81fgswfCBoAAfw+KZrZ/VlRWSONiYj3//y2DB+PeP5X8mBlOG/wzCMMP+/P3DyMrCcluVjy+AaAsE+HkZmqqyPro5WlZoCAnMwKfx////TIyMjAQLQhQfTOwo++1sb97+Q0SoxYSR8Teh8CVGHmxBcGwxQ1FO3P+ESJ/lavz80cRoJFYN4+4rN/8vXrmFITs5bLK5gmwesRqJVcd47e27p+8+fFovriRfrMrI+JNYjcSqAwC92jQofNJJawAAAABJRU5ErkJggg==") 0 0 , auto !important;}              
+                input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuUlEQVRIS2O88f7Dn+/ff0xhey9epq3N+IuByoDx4M27/0+evPjN19cxS1NQcCGVzWdg3Hruyv/oiDyGFcsnvleWETNVFRe/S01LGLeev/Lf2zOJgfnTV4ZdJ9beVVSSsVbi4XlJLUsgFgRnMTC8eMugp6PO0DW1Ybe8ukKkJh/fW2pYArEgNAdsAfOfvwypuXH/skuSluiKi8VT14JfvxkYnr8Bmzl1YTeDm7dT7NL+nmUNDQ3/KLEI4QOQKY+eMzD8hxjX3Fv5NjwpJEKNh2cP9Sz48JmB4eMXsHmiYsIM7ZPqXtg7W9ioCgiQnbJQffD7DwPDs9dwBzt52DK09tfc5RYRMNUTEHhPjk9QLfj7l4Hh5TsGBpBFUBAa48/QOrFm/qcvX3JMpKS+kWoJqgUg3UjBBDPMzcfx15QFnaVq/PyTKLfg81cGhvef4JENMpCdg52hpDabISQ2yMdQUnQrKZZg+uDvPwaGF28YGP78RTFHQVmOYfKCri+a2ip+Kry8+4m1BNMCkE5QRCPFA8wwaVlJhn3nNl1k+vvbR1VY+AkxlmC34PsPBoZX2BMNyCcL1kyZw8bPlWclK/udkCXYLQDpevgcq14mZiaGkCg/hqLanIkWirIFZFuwZUk/w+uXbxgunr3CcOH0ZYaL564yvH/3AWweBwc7Q9/s1n/OHvYd6gJ81fgswfCBoAAfw+KZrZ/VlRWSONiYj3//y2DB+PeP5X8mBlOG/wzCMMP+/P3DyMrCcluVjy+AaAsE+HkZmqqyPro5WlZoCAnMwKfx////TIyMjAQLQhQfTOwo++1sb97+Q0SoxYSR8Teh8CVGHmxBcGwxQ1FO3P+ESJ/lavz80cRoJFYN4+4rN/8vXrmFITs5bLK5gmwesRqJVcd47e27p+8+fFovriRfrMrI+JNYjcSqAwC92jQofNJJawAAAABJRU5ErkJggg==") 0 0, auto !important;}                                                                              
+                [type="search"]::-webkit-search-cancel-button, [type="search"]::-webkit-search-decoration { url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0, auto  !important;}                
+                input::-webkit-contacts-auto-fill-button {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuUlEQVRIS2O88f7Dn+/ff0xhey9epq3N+IuByoDx4M27/0+evPjN19cxS1NQcCGVzWdg3Hruyv/oiDyGFcsnvleWETNVFRe/S01LGLeev/Lf2zOJgfnTV4ZdJ9beVVSSsVbi4XlJLUsgFgRnMTC8eMugp6PO0DW1Ybe8ukKkJh/fW2pYArEgNAdsAfOfvwypuXH/skuSluiKi8VT14JfvxkYnr8Bmzl1YTeDm7dT7NL+nmUNDQ3/KLEI4QOQKY+eMzD8hxjX3Fv5NjwpJEKNh2cP9Sz48JmB4eMXsHmiYsIM7ZPqXtg7W9ioCgiQnbJQffD7DwPDs9dwBzt52DK09tfc5RYRMNUTEHhPjk9QLfj7l4Hh5TsGBpBFUBAa48/QOrFm/qcvX3JMpKS+kWoJqgUg3UjBBDPMzcfx15QFnaVq/PyTKLfg81cGhvef4JENMpCdg52hpDabISQ2yMdQUnQrKZZg+uDvPwaGF28YGP78RTFHQVmOYfKCri+a2ip+Kry8+4m1BNMCkE5QRCPFA8wwaVlJhn3nNl1k+vvbR1VY+AkxlmC34PsPBoZX2BMNyCcL1kyZw8bPlWclK/udkCXYLQDpevgcq14mZiaGkCg/hqLanIkWirIFZFuwZUk/w+uXbxgunr3CcOH0ZYaL564yvH/3AWweBwc7Q9/s1n/OHvYd6gJ81fgswfCBoAAfw+KZrZ/VlRWSONiYj3//y2DB+PeP5X8mBlOG/wzCMMP+/P3DyMrCcluVjy+AaAsE+HkZmqqyPro5WlZoCAnMwKfx////TIyMjAQLQhQfTOwo++1sb97+Q0SoxYSR8Teh8CVGHmxBcGwxQ1FO3P+ESJ/lavz80cRoJFYN4+4rN/8vXrmFITs5bLK5gmwesRqJVcd47e27p+8+fFovriRfrMrI+JNYjcSqAwC92jQofNJJawAAAABJRU5ErkJggg==") 0 0, auto  !important;}                
+                .paper-button, .ytp-progress-bar-container, input[type=submit], :link, :visited {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0, auto !important;}                
+                a > * {url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0, auto !important;}                               
+                input:read-only {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAACuUlEQVRIS2O88f7Dn+/ff0xhey9epq3N+IuByoDx4M27/0+evPjN19cxS1NQcCGVzWdg3Hruyv/oiDyGFcsnvleWETNVFRe/S01LGLeev/Lf2zOJgfnTV4ZdJ9beVVSSsVbi4XlJLUsgFgRnMTC8eMugp6PO0DW1Ybe8ukKkJh/fW2pYArEgNAdsAfOfvwypuXH/skuSluiKi8VT14JfvxkYnr8Bmzl1YTeDm7dT7NL+nmUNDQ3/KLEI4QOQKY+eMzD8hxjX3Fv5NjwpJEKNh2cP9Sz48JmB4eMXsHmiYsIM7ZPqXtg7W9ioCgiQnbJQffD7DwPDs9dwBzt52DK09tfc5RYRMNUTEHhPjk9QLfj7l4Hh5TsGBpBFUBAa48/QOrFm/qcvX3JMpKS+kWoJqgUg3UjBBDPMzcfx15QFnaVq/PyTKLfg81cGhvef4JENMpCdg52hpDabISQ2yMdQUnQrKZZg+uDvPwaGF28YGP78RTFHQVmOYfKCri+a2ip+Kry8+4m1BNMCkE5QRCPFA8wwaVlJhn3nNl1k+vvbR1VY+AkxlmC34PsPBoZX2BMNyCcL1kyZw8bPlWclK/udkCXYLQDpevgcq14mZiaGkCg/hqLanIkWirIFZFuwZUk/w+uXbxgunr3CcOH0ZYaL564yvH/3AWweBwc7Q9/s1n/OHvYd6gJ81fgswfCBoAAfw+KZrZ/VlRWSONiYj3//y2DB+PeP5X8mBlOG/wzCMMP+/P3DyMrCcluVjy+AaAsE+HkZmqqyPro5WlZoCAnMwKfx////TIyMjAQLQhQfTOwo++1sb97+Q0SoxYSR8Teh8CVGHmxBcGwxQ1FO3P+ESJ/lavz80cRoJFYN4+4rN/8vXrmFITs5bLK5gmwesRqJVcd47e27p+8+fFovriRfrMrI+JNYjcSqAwC92jQofNJJawAAAABJRU5ErkJggg==") 0 0 , auto !important; }               
+                img, button {url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=")  0 0, auto !important; }                              
+                ::-webkit-scrollbar-button {cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0,  auto !important;}                
+                .ogdlpmhglpejoiomcodnpjnfgcpmgale_pointer, ::-webkit-file-upload-button{cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0,  auto !important;}
+                button, .ytp-volume-panel{cursor:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0,  auto !important;}
+                #myogdlpmhglpejoiomcodnpjnfgcpmgale .icon { cursor: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAEkUlEQVRIS62VWyyjaRjHnw/VcarTRKiIY9B2FBciMeNGysWkDgntkg1qbZrYxCFMHKKoqMOKdVgXrDRxuGCLCRZBJUM3sdIIajX0xqkVdpwp2l3ddvN+GZbVzkzsvHff937f//c87/N/nhcDAEsajfbKzs6uXKfT0QCgmUgk/jg3N6eGL7AwKpXKDgwMFBYWFtoFBARAd3c3tLa2dm1sbGR8AX3AgoKC9iYnJ93IZDKud3NzAxkZGSCRSL7f3d0t/r8QBDiamZlxdnZ2vtMyGAwQFhb2/urq6iuFQvErlUolqFQqbwqF4kUkEp/J5fItMpn8nEQi1QDAcwKB0CWVSn+Oi4vbGhgY+Pt+UBiNRvuWwWD8VF1dbWZjY3O3t729DZmZmb+p1epUpVKZGx8fz/Hx8SFZWFjA5uamvq+vDxsdHcXc3d1henoaZXw0OztbQKfTRRMTE3/eCmEA8MzFxeWHqqqqLC6Xi57xpdfrYWRkBLKysrbb2tq8oqOjwdbWFt/TarWws7MDYrEYkpKSwM3NDU5PT4HP519IJJKvV1ZWxu4D0IZFTU3NyNjY2GsGgwEYdseB8vJykMlk0NPTAw4ODh8tCYIwGAz94eGhh0ql2kMf3ylxOBwHqVT6TigUhkZERDwQampqgoODAygqKvokZGpqCths9uT5+flrDMMM/4YKAGQy+WVUVJS4tbXV+n60Op0OnTsMDw9DXl4eWFpamswEGSQlJeV0fn4+TalUjj0A8Pl8s/r6+hKRSFTJZDLNn2rR5eVliIiIEGg0mvIHACQYEhLitb+//06hUHh/6sxNBYAcyOFwhs7Pz795BPhQl98TExNfDA4OPikJ5DIej3fR0dER9gjA5/MtBQKBjM1mU4qLiyEoKMgk5OzsDLcrnU6HyspK8PLyQpHjFufxeFBbW/vCKKC6uloml8spqA9yc3NNFnVvbw8EAgEudn19DS0tLfgz6hf0rq6u7jHgwxGtarVaWmNjI7BYLPDz8zOaBXIMCqK9vR1GR0ehoqIC0tLSwMPDA2X0R3d39ytjNUBeH+jt7U2iUCiwuroKsbGxjwBHR0d49yJ4amoqMgc4OjoCmsiurq6QkJDwl0ajSTEKSE5OJisUii2xWGw5MzMDMTExjxpMLpfjx5CdnQ2RkZGQnp6OZ+Dv7w8lJSXg5OQEnZ2dGqMAFK6vr28yi8XqQz+Zm5sDgUB4lMXa2hqUlpZCQ0MD2NvbA5FIRLMLrK2toaCgADXce5MALpdLEIlEb2JjY0vKysrsPD09cYH/LjTwLi8v0XiH5uZmQNMWFbqiokI3Pj6eZhKAhAwGA+bq6ppib28fw2Qyk729vYlxcXFopOBZITuiphoaGoKlpSVITEwEJpOJMtILhcJfTk5OMj8KuI2WTqfboAsnODj45eXlZen19bXH7R4qaE5ODoSGhuJFRi6SyWQDx8fH36nV6qPPAhjzaH9/vzmPx9vu6upyJ5FI2Pr6+k1+fr7KycnpzcrKytCD++BJ8wAAwsPD6QsLC/F6vd7Mysrqgkqlvl1cXFQ+uDKfKv65//0D8djbi59nRbYAAAAASUVORK5CYII=") 0 0, auto !important; }
+                                                
+                </style></head>
+
+<body style="">
+    <div class="header">
+    <div class="header__inner clearfix">
+        <h1 class="header__logo pull-left"><a href="https://ithelp.ithome.com.tw/"><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/logo.svg" alt="iT邦幫忙" class="img-responsive"></a></h1>
+        <div class="header__promote">
+            <div class="a12word pull-right">
+                <div class="a12word__box">
+                    <script type="text/javascript" async="" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ga.js.下載"></script><script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js.下載" async="" crossorigin="anonymous"></script><script id="facebook-jssdk" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sdk.js(1).下載"></script><script type="text/javascript" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve"> </script><!-- T2_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=T2~ithome_forum~1908T201" target="_blank">行銷！就用中文網址輔助</a><!-- T2_ithome_forum end -->
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(1)"> </script>
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(2)"> </script><!-- T4_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=T4~ithome_forum~1908T402" target="_blank">14.2%企業願意聘用大資料人才</a><!-- T4_ithome_forum end -->
+                </div>
+            </div>
+
+            <div class="a970 pull-right">
+                <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(3)"></script><!-- B1_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=B1~ithome_forum~1908B106" target="_blank"><img border="0" alt="" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/1575267895_5de4ae3769816.gif"></a><!-- B1_ithome_forum end -->
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu menu--fixed affix">
+        <div class="menu__bg">
+            <div class="menu__container clearfix">
+                
+                <h1 class="menu__logo">
+                    <a href="https://ithelp.ithome.com.tw/" class="menu__logo-link"><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/nav_logo.svg" alt="iT邦幫忙"></a>
+                </h1>
+
+                                                                                                                
+                
+                <ul class="list-unstyled menu__left">
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/questions" class="menu__item-link  menu__item-link--pl">技術問答</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="menu__item-link  menu__item-link--active ">技術文章</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=job" class="menu__item-link  hidden-xs">iT 徵才</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/tags" class="menu__item-link  hidden-xs">Tag</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/talks" class="menu__item-link  hidden-xs">聊天室</a>
+                    </li>
+                    <li class="menu__item menu__item--ironman">
+                        <a href="https://ithelp.ithome.com.tw/2020ironman?sc=nav" target="_blank" class="menu__item-link hidden-xs">鐵人賽</a>
+                    </li>
+                </ul>
+                
+
+                                    
+                                        <ul class="list-unstyled menu__right">
+                        <li class="menu__item">
+                            <div id="searchDropdown" class="menu__search-btn">
+                                <span class="menu__search-toggle"></span>
+                            </div>
+                        </li>
+
+                        
+
+                                                <li class="menu__item menu__ironman--hidden">
+                                                    </li>
+                         
+                        
+
+                        <li class="menu__item show-ask">
+                            <a href="https://ithelp.ithome.com.tw/questions/create" class="menu__item-right-link">發問</a>
+                        </li>
+                        <li class="menu__item show-ask dropdown">
+                            <button class="menu__item-right-link" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               發文 <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu menu__dropdown-menu" aria-labelledby="dLabel">
+                                                                <li><a href="https://ithelp.ithome.com.tw/articles/create?group=tech">技術</a></li>
+                                                                <li><a href="https://ithelp.ithome.com.tw/articles/create?group=job">徵才</a></li>
+                                                            </ul>
+                        </li>
+                        <li class="menu__item show-notice">
+                            <a href="https://ithelp.ithome.com.tw/messages" class="notification menu__item-right-link menu__item-right-link--narrow menu__tooltip menu__tooltip--msg  menu__item-right-link--zero ">
+                                <i class="fa fa-commenting fa-fw"></i>
+                                    <span id="message_count"></span>
+                            </a>
+                        </li>
+                        <li class="menu__item show-notice">
+                            <a href="https://ithelp.ithome.com.tw/notifications" class="notification menu__item-right-link menu__item-right-link--narrow menu__tooltip menu__tooltip--notice  menu__item-right-link--zero ">
+                                <i class="fa fa-bell fa-fw"></i>
+                                    <span id="notification_count"></span>
+                            </a>
+                        </li>
+                        <li class="menu__item menu__item--ml dropdown">
+                            <a id="dLabel" class="menu__item-link menu__item-link--padding clearfix" data-target="#" href="https://ithelp.ithome.com.tw/articles/10222376" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <span class="notification menu__avatar">
+                                    <img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/135473" class="img-circle menu__avatar-img">
+
+                                        <span id="notification_count">  </span>
+                                </span>
+                                <span class="menu__account">ksz54213</span>
+                                <span class="caret menu__caret"></span>
+                            </a>
+                            <ul class="dropdown-menu menu__profile-dropdown" aria-labelledby="dLabel">
+                                <li class="show-list-ask"><a href="https://ithelp.ithome.com.tw/questions/create">發問</a></li>
+                                <li class="show-list-ask">
+                                    <a class="menu__profile-dropdown-post">發文 <i class="fa fa-angle-down fa-fw" aria-hidden="true"></i></a>
+                                    <ul class="list-unstyled menu__profile-dropdown-ul">
+                                                                                    <li><a href="https://ithelp.ithome.com.tw/articles/create?group=tech">技術</a></li>
+                                                                                    <li><a href="https://ithelp.ithome.com.tw/articles/create?group=job">徵才</a></li>
+                                                                            </ul>
+                                </li>
+                                <li class="show-list-notice">
+                                    <a href="https://ithelp.ithome.com.tw/messages" class="notification">
+                                        站內簡訊
+                                                                            </a>
+                                </li>
+                                <li class="show-list-notice">
+                                    <a href="https://ithelp.ithome.com.tw/notifications" class="notification">
+                                        即時通知
+                                                                            </a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082" id="account" data-account="ksz54213">我的主頁</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/questions">我的發問</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/answers">我的回答</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/articles">我的發文</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/traces/questions">追蹤的問答</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/traces/articles">追蹤的文章</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/traces/tags">追蹤的tag</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/traces/users">追蹤的邦友</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/20115082/invited">邀請我回答</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/setting">設定</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/search?tab=user">找邦友</a>
+                                </li>
+                                <li>
+                                    <a href="https://ithelp.ithome.com.tw/users/logout">登出</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                            </div>
+        </div>
+
+        
+        <div class="menu__dropform">
+            <div class="menu__container">
+                <form method="GET" action="https://ithelp.ithome.com.tw/search" accept-charset="UTF-8" role="search" class="clearfix">
+                    <div class="pull-left">
+                        <input name="search" type="text" class="menu__search-input" placeholder="搜尋主題、問題或人">
+
+                        <input type="radio" class="radio-input" name="tab" value="question" id="searchQA" checked="">
+                        <label for="searchQA" class="radio-label">問答</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="article" id="searchArticle">
+                        <label for="searchArticle" class="radio-label">文章</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="tag" id="searchTag">
+                        <label for="searchTag" class="radio-label">Tag</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="user" id="searchID">
+                        <label for="searchID" class="radio-label">邦友</label>
+                    </div>
+                    <button type="submit" class="btn menu__dropform-btn">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="menu__mask"></div>
+</div>
+
+    
+            
+        <div class="container index-top">
+        <div class="row">
+            <div class="col-md-12 clearfix">
+                    <div class="leftside">
+        
+                
+        
+                    <div class="ir-article-icon-11th clearfix">
+                 <a href="https://ithelp.ithome.com.tw/2020ironman" target="_blank" class="ir-article-icon-11th__frame">
+                    <p class="ir-article-icon-11th__text"> 第 11 屆 iT 邦幫忙鐵人賽</p>
+                </a>
+            </div>
+        
+        <div class="qa-panel clearfix">
+            
+            
+                                                <div class="ir-article__days ir-article__days--ai-and-data ">
+                        <div class="ir-article__days-word">DAY <span class="ir-article__days-num">
+                                                              15
+                                                      </span></div>
+                    </div>
+                            
+            <div class="qa-panel__side">
+                
+                <div class="qa-side">
+                    <div class="likeGroup">
+            <div class="likeGroup__arrow like_btn" data-type="article" data-id="10222376">
+                <i class="fa fa-caret-up"></i>
+            </div>
+            <div class="likeGroup__num">0</div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="collection qa-collection">
+                    <button class="btn collection__btn collection_btn" data-type="article" data-id="10222376" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="加入收藏清單">
+                <i class="fa fa-star-o"></i>
+            </button>
+        
+    </div>
+
+
+
+
+                </div>
+                
+            </div>
+            <div class="qa-panel__content">
+                <div class="qa-header">
+                    
+                    
+                                                                    <a href="https://ithelp.ithome.com.tw/2020ironman/ai-and-data" class="group__badge group__badge--ai-and-data">
+                                                        AI &amp; Data
+                        </a>
+                                        <h3 class="ir-article__topic"><a href="https://ithelp.ithome.com.tw/users/20107875/ironman/2209">爬蟲在手、資料我有 - 30 天 Scrapy 爬蟲實戰</a>系列 第
+                    <span class="ir-article__topic-count">15</span> 篇
+                    </h3>
+
+                    
+
+
+                    <h2 class="qa-header__title ir-article__title">
+                                                【Day 14】資料持久化 - RDBMS (1/4)
+                    </h2>
+
+                    <div class="qa-header__tagGroup">
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/11th%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag qa-header__tagList">11th鐵人賽</a>
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/python" class="tag qa-header__tagList">python</a>
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/crawler" class="tag qa-header__tagList">crawler</a>
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/%E7%88%AC%E8%9F%B2" class="tag qa-header__tagList">爬蟲</a>
+                                                    <a href="https://ithelp.ithome.com.tw/tags/articles/postgresql" class="tag qa-header__tagList">postgresql</a>
+                                            </div>
+
+
+                    <div class="ir-article-info">
+                        
+                                                    <a href="https://ithelp.ithome.com.tw/users/20107875/ironman" class="ir-article-info__avatar">
+                                <img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/127323" class="img-circle">
+
+                            </a>
+                                                
+                        <div class="ir-article-info__content">
+                                                            <div><a href="https://ithelp.ithome.com.tw/users/20107875/ironman" class="ir-article-info__name">
+                                    Rex Chien
+                                </a></div>
+                            
+                            <div class="ir-article-info__view">123 瀏覽</div>
+
+                            
+                            <div><a title="2019-09-29 11:06:20" class="qa-header__info-time ir-article-info__time">2019-09-29 11:06:20</a></div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                
+                <div class="qa-markdown">
+                    <div class="markdown">
+                        <div class="markdown__style">
+                                                            <p>寫完蒐集資料的程式後，接著要選擇儲存資料的方式，通常會選擇<code>關聯式資料庫(RDBMS)</code>或<code>非關聯式資料庫(NoSQL)</code> <del>，應該比較少人會存成本地檔案吧</del>。這個系列會分別選擇 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> 和 <a href="https://www.mongodb.com/" target="_blank">MongoDB</a> 來做說明。今天就先介紹怎麼使用關聯式資料庫 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a> 吧！。</p>
+<h2>安裝</h2>
+<p>可以選擇要在本機安裝獨立的資料庫實體或者使用 <code>Docker</code> 容器。</p>
+<h3>本機資料庫實體</h3>
+<p>到官網<a href="https://www.postgresql.org/download/" target="_blank">下載</a>對應作業系統版本的安裝檔，下載完成後執行，下一步到底就可以了。</p>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875q3AZYQdEqi.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875q3AZYQdEqi.png"></p>
+<h3>Docker 容器</h3>
+<p>直接使用官方的 <a href="https://hub.docker.com/_/postgres" target="_blank">PostgreSQL image</a>。</p>
+<ol>
+<li>取得映像檔</li>
+</ol>
+<pre><code class="language-shell hljs">docker pull postgres
+</code></pre>
+<ol start="2">
+<li>啟動容器</li>
+</ol>
+<pre><code class="language-shell hljs">docker run --name ithome-postgres -e POSTGRES_PASSWORD=mysecretpassword -v E:\ithome-2019\postgres:/var/lib/postgresql/data -d postgres
+</code></pre>
+<h3>管理工具</h3>
+<p>可以使用官方的 <a href="https://www.pgadmin.org/" target="_blank">pgAdmin</a> 來作為 PostgreSQL 的管理工具。如果是用本機安裝的，預設就會包含了；如果是用 Docker 容器就需要到網站上下載。</p>
+<h2>初始化資料庫</h2>
+<ol>
+<li>進入管理工具後，先建立一個 Database。</li>
+</ol>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/201078752O7HmhmAwR.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/201078752O7HmhmAwR.png"></p>
+<ol start="2">
+<li>到 <code>public</code> schema 下，建立新的 Table</li>
+</ol>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875y5PTEEkTn3.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875y5PTEEkTn3.png"></p>
+<ol start="3">
+<li>定義 Table</li>
+</ol>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875O1x2hGm4Ko.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875O1x2hGm4Ko.png"></p>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875c1fqKuRu3p.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875c1fqKuRu3p.png"></p>
+<ol start="4">
+<li>儲存</li>
+</ol>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875PiTw4SuVQA.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875PiTw4SuVQA.png"></p>
+<h2>在程式中使用資料庫</h2>
+<ol>
+<li>進入虛擬環境</li>
+</ol>
+<pre><code class="language-shell hljs">pipenv shell
+</code></pre>
+<ol start="2">
+<li>安裝套件</li>
+</ol>
+<pre><code class="language-shell hljs">pipenv install psycopg2
+</code></pre>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875CEVfN3FQTn.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875CEVfN3FQTn.png"></p>
+<ol start="3">
+<li>寫扣！</li>
+</ol>
+<pre><code class="language-python hljs"><span class="hljs-keyword">import</span> psycopg2
+<span class="hljs-keyword">from</span> datetime <span class="hljs-keyword">import</span> datetime
+
+host = <span class="hljs-string">"localhost"</span>
+user = <span class="hljs-string">"postgres"</span>
+dbname = <span class="hljs-string">"ithome2019"</span>
+password = <span class="hljs-string">"&lt;server_admin_password&gt;"</span>
+
+conn_string = <span class="hljs-string">f'host=<span class="hljs-subst">{host}</span> user=<span class="hljs-subst">{user}</span> dbname=<span class="hljs-subst">{dbname}</span> password=<span class="hljs-subst">{password}</span>'</span>
+conn = psycopg2.connect(conn_string)
+print(<span class="hljs-string">'資料庫連線成功！'</span>)
+
+cursor = conn.cursor()
+
+article = {
+    <span class="hljs-string">'title'</span>: <span class="hljs-string">'【Day 0】前言'</span>,
+    <span class="hljs-string">'url'</span>: <span class="hljs-string">'https://ithelp.ithome.com.tw/articles/10215484'</span>,
+    <span class="hljs-string">'author'</span>: <span class="hljs-string">'Rex Chien'</span>,
+    <span class="hljs-string">'publish_time'</span>: datetime(<span class="hljs-number">2019</span>, <span class="hljs-number">9</span>, <span class="hljs-number">15</span>, <span class="hljs-number">15</span>, <span class="hljs-number">50</span>, <span class="hljs-number">0</span>),
+    <span class="hljs-string">'tags'</span>: <span class="hljs-string">'11th鐵人賽,python,crawler,webscraping,scrapy'</span>,
+    <span class="hljs-string">'content'</span>: <span class="hljs-string">'從簡單的商品到價提醒，到複雜的輿情警示、圖形辨識，「資料來源」都是基礎中的基礎。但網路上的資料龐大而且更新很快，總不可能都靠人工來蒐集資料。'</span>
+}
+cursor.execute(<span class="hljs-string">'''
+    INSERT INTO public.ithome_article(title, url, author, publish_time, tags, content)
+    VALUES (%(title)s,%(url)s,%(author)s,%(publish_time)s,%(tags)s,%(content)s);
+    '''</span>,
+    article)
+
+print(<span class="hljs-string">'資料新增成功！'</span>)
+
+conn.commit()
+cursor.close()
+conn.close()
+</code></pre>
+<p>執行上面這段程式碼後，在管理程式中選擇剛剛建立的 Table <code>ithome_article</code>，再點選上方的 <code>View Data</code> 按鈕，就可以在右邊的 <code>Data Output</code> 頁籤中看到我們剛剛新增的資料了！</p>
+<p><img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/20107875sVBtARyeQQ.png" alt="https://ithelp.ithome.com.tw/upload/images/20190929/20107875sVBtARyeQQ.png"></p>
+<hr>
+<p>今天初步了解怎麼安裝資料庫環境，並用程式來寫入資料。明天開始會修改前幾天寫的爬蟲程式，把文章存到資料庫中，敬請期待～</p>
+ <br>
+                                                    </div>
+                    </div>
+                </div>
+
+                
+                <div class="qa-action">
+    <ul class="list-inline qa-action__list">
+        <li>
+            <a href="https://ithelp.ithome.com.tw/articles/10222376#reply" class="qa-action__link qa-action__link--reply">
+                <i class="fa fa-comment fa-fw qa-action__icon"></i>留言            </a>
+        </li>
+        <li>
+            <button class="qa-action__trace trace_btn" data-type="article" data-id="10222376">
+	    	<i class="fa fa-heart-o fa-fw qa-action__icon "></i>
+	    	追蹤<span class="qa-action__link-num amount">0</span>
+		</button>
+	
+
+
+
+        </li>
+        <li class="pull-right">
+            <button class="qa-action__link qa-action__link-report report_btn " data-type="article" data-id="10222376">
+	    <i class="fa fa-flag fa-fw qa-action__icon"></i>檢舉
+	</button>
+
+
+
+
+
+        </li>
+            </ul>
+</div>
+
+            </div>
+
+
+            
+            <div class="social-share clearfix">
+	<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/xd_arbiter.html" style="border: none;"></iframe></div><div></div></div></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.6";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="fb-like fb_iframe_widget" data-href="https://ithelp.ithome.com.tw/articles/10222376" data-width="36px" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=40&amp;href=https%3A%2F%2Fithelp.ithome.com.tw%2Farticles%2F10222376&amp;layout=box_count&amp;locale=zh_TW&amp;sdk=joey&amp;share=false&amp;show_faces=false&amp;width=36px"><span style="vertical-align: bottom; width: 49px; height: 40px;"><iframe name="f30f38b58f15c78" height="1000px" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/like.html" style="border: none; visibility: visible; width: 49px; height: 40px;" class=""></iframe></span></div>
+    <ul class="soc">
+	    <li><a class="soc-twitter" href="https://twitter.com/intent/tweet?text=https://ithelp.ithome.com.tw/articles/10222376" target="_blank"></a></li>
+	    <li><a class="soc-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://ithelp.ithome.com.tw/articles/10222376" target="_blank"></a></li>
+	    <li><a class="soc-google" href="https://plus.google.com/share?url=https://ithelp.ithome.com.tw/articles/10222376" target="_blank"></a></li>
+	    
+	</ul>
+</div>        </div>
+
+        
+        <div class="article-series">
+
+            
+                        <div class="clearfix article-series-page">
+                <div class="article-series-page__line"></div>
+                <div class="article-series-page__wrapper">
+                                            <a href="https://ithelp.ithome.com.tw/articles/10222199" class="article-series-page__link">
+                            <div class="article-series-page__arrow article-series-page__arrow--left"><i class="fa fa-fw fa-angle-left" aria-hidden="true"></i></div>
+                            <div class="article-series-page__content">
+                                <div class="article-series-page__text">上一篇</div>
+                                <div class="article-series-page__title">【Day 13】蒐集 iT 邦幫忙的技術文章  (6/6) - 回文</div>
+                            </div>
+                        </a>
+                                    </div>
+                <div class="article-series-page__wrapper text-right">
+                                            <a href="https://ithelp.ithome.com.tw/articles/10222927" class="article-series-page__link">
+                            <div class="article-series-page__arrow article-series-page__arrow--right"><i class="fa fa-fw fa-angle-right" aria-hidden="true"></i></div>
+                            <div class="article-series-page__content">
+                                <div class="article-series-page__text">下一篇</div>
+                                <div class="article-series-page__title">【Day 15】資料持久化 - RDBMS (2/4)</div>
+                            </div>
+                        </a>
+                                    </div>
+            </div>
+                        <div class="article-series-catalog">
+                <div class="article-series-catalog__badge">
+                    系列文
+                </div>
+                <div class="article-series-catalog__topic">
+                    <a href="https://ithelp.ithome.com.tw/users/20107875/ironman/2209" class="article-series-catalog__topic-link">爬蟲在手、資料我有 - 30 天 Scrapy 爬蟲實戰</a>
+                     共 <span class="article-series-catalog__num">33</span> 篇
+                </div>
+                <div class="clearfix">
+                    <div>
+                        <div class="article-series-catalog__title">目錄</div>
+
+                        <div class="pull-right subscription-group">
+                            <a href="https://ithelp.ithome.com.tw/rss/series/2209" class="rss-icon" target="_blank">
+                                <i class="fa fa-rss fa-fw" aria-hidden="true"></i>RSS系列文
+                            </a>
+                                                            <button class="article-series-catalog__subscription subscription-btn" data-type="series" data-id="2209">
+                                    <i class="fa fa-bookmark-o fa-fw" aria-hidden="true"></i><span class="subscription-text">訂閱系列文</span>
+                                </button>
+                            
+                            <div class="article-series-catalog__subscription-num">
+                                <span class="subscription-amount">31</span> 人訂閱
+                            </div>
+                        </div>
+                    </div>
+                    <ol class="article-series-catalog__lists">
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">29</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10227809" class="article-series-catalog__link">【Day 28】Item Pipelines 應用 - 儲存資料到 MongoDB</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">30</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10227995" class="article-series-catalog__link">【Day 29】在 Scrapy 中處理請求和回應 - Downloader Middlewares</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">31</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10228616" class="article-series-catalog__link">【Day 30】在程式中啟動 Scrapy 爬蟲</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">32</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10228645" class="article-series-catalog__link">【Day 31】在 Scrapy 中操作瀏覽器</a>
+                        </li>
+                                                <li class="article-series-catalog__list">
+                            <div class="article-series-catalog__list-num">33</div>
+                            <a href="https://ithelp.ithome.com.tw/articles/10228719" class="article-series-catalog__link">【Day 32】Scrapy 爬取 iT 邦幫忙的回文</a>
+                        </li>
+                                            </ol>
+                   
+
+                    <a href="https://ithelp.ithome.com.tw/users/20107875/ironman/2209"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>完整目錄</a>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+        
+
+        
+                
+        <div id="reply">
+                                                <div class="reply-status">
+                        <h4 class="text-center">尚未有邦友留言</h4>
+                    </div>
+                                                    <div class="reply">
+                        <div class="reply-title">
+                            我要留言
+                        </div>
+                        <div class="reply-frame">
+    <div class="reply-frame__header">
+		<img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/135473" class="img-circle ans-header__avatar response__avatar-size">
+
+	    <div class="response-header__info">
+	        <div class="response__person">ksz54213</div>
+	        <div class="ans-header__leveltime">
+	            iT邦見習生 0 級
+	        </div>
+	    </div>
+	</div>
+    <div class="reply-frame__body">
+    	<form method="POST" action="https://ithelp.ithome.com.tw/responses" accept-charset="UTF-8" class=""><input name="_token" type="hidden" value="werQJYkdemZ7PsrMCGYfa55GAK0Oe3KEBqUJ9WWN">
+        <div class="form-group clearfix">
+	        <div class="editor-box">
+			    <textarea id="SimpleMDE_0" class="form-control" name="description" rows="5" placeholder="留言" style="display: none;"></textarea><div class="editor-toolbar"><a title="粗體 (Ctrl-B)" tabindex="-1" class="fa fa-bold"></a><a title="斜體 (Ctrl-I)" tabindex="-1" class="fa fa-italic"></a><a title="插入連結 (Ctrl-K)" tabindex="-1" class="fa fa-link"></a><a title="引用 (Ctrl-&#39;)" tabindex="-1" class="fa fa-quote-left"></a><a title="新增程式碼 (Ctrl-Alt-C)" tabindex="-1" class="fa fa-code"></a><a title="插入圖片 (Ctrl-Alt-I)" tabindex="-1" class="fa fa-picture-o"></a><i class="separator">|</i><a title="上傳圖片" tabindex="-1" class="fa fa-upload"></a><a title="加入數學公式" tabindex="-1" class="fa fa-pie-chart"></a><a title="編號清單 (Ctrl-Alt-L)" tabindex="-1" class="fa fa-list-ol"></a><a title="項目符號清單 (Ctrl-L)" tabindex="-1" class="fa fa-list-ul"></a><a title="插入水平線" tabindex="-1" class="fa fa-minus"></a><a title="加入 YouTube 連結" tabindex="-1" class="fa fa-youtube"></a><i class="separator">|</i><a title="復原" tabindex="-1" class="fa fa-undo no-disable"></a><a title="取消復原" tabindex="-1" class="fa fa-repeat no-disable"></a><a title="熊俠貼圖" tabindex="-1" class="fa fa-smile-o"></a><a title="標記使用者" tabindex="-1" class="fa fa-user"></a><i class="separator">|</i><a title="預覽 (Ctrl-P)" tabindex="-1" class="mk__editor-pre no-disable"></a></div><div class="CodeMirror cm-s-paper CodeMirror-wrap CodeMirror-empty"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 15px; left: 15px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true"><div style="min-width: 1px; height: 0px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true"><div style="height: 100%; min-height: 1px; width: 0px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -19px; border-right-width: 11px; min-height: 33px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><pre class="CodeMirror-placeholder" style="height: 0px; overflow: visible;">留言</pre><div class="CodeMirror-measure"><span><span>​</span>x</span></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="CodeMirror-cursors"><div class="CodeMirror-cursor" style="left: 4px; top: 0px; height: 24.8889px;">&nbsp;</div></div><div class="CodeMirror-code"><pre class=" CodeMirror-line "><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 11px; width: 1px; top: 33px; border-bottom: 0px solid transparent;"></div><div class="CodeMirror-gutters" style="display: none; height: 312px;"></div></div></div><div class="editor-preview-side"></div><div class="editor-statusbar"></div>
+
+      
+     <style>
+            .sticky {
+                position: fixed;
+                top: 50px;
+                width: 100%;
+                z-index: 9;
+            }        
+        </style>
+    <script type="text/template" id="BearManEmoticonList">
+        <div style="height: 175px; overflow-x: scroll;">
+                                                <img class="emoticon" src="/images/emoticon/emoticon01.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon02.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon03.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon04.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon05.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon06.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon07.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon08.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon09.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon10.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon11.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon12.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon13.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon14.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon15.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon16.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon17.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon18.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon19.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon20.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon21.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon22.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon23.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon24.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon25.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon26.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon27.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon28.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon29.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon30.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon31.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon32.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon33.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon34.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon35.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon36.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon37.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon38.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon39.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon40.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon41.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon42.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon43.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon44.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon45.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon46.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon47.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon48.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon49.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon50.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon51.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon52.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon53.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon54.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon55.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon56.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon57.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon58.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon59.gif"/>
+                                                                                            <img class="emoticon" src="/images/emoticon/emoticon61.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon62.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon63.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon64.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon65.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon66.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon67.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon68.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon69.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon70.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon71.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon72.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon73.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon74.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon75.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon76.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon77.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon78.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon79.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon80.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon81.gif"/>
+                                                                <img class="emoticon" src="/images/emoticon/emoticon82.gif"/>
+                                    </div>
+    </script>
+    
+        
+    <script type="text/template" id="UploadImageTemplate">
+        <div>
+        <style>
+            .fileUpload {
+                position: relative;
+                overflow: hidden;
+                margin: 10px;
+            }
+            .fileUpload input.upload {
+                position: absolute;
+                top: 0;
+                right: 0;
+                margin: 0;
+                padding: 0;
+                font-size: 20px;
+                cursor: pointer;
+                opacity: 0;
+                filter: alpha(opacity=0);
+                display: block;
+            }
+            #uploadThumbnail {
+                height: 175px;
+                overflow-x: scroll;
+            }
+            #uploadThumbnail .uploadImage {
+                max-width: 100%;
+            }
+        </style>
+        <div>
+            <img id="uploadThumbnail"/>
+        </div>
+        <hr/>
+        <div id="fileUpload" class="fileUpload btn btn-primary">
+            <span id="uploadText">上傳圖片</span>
+            <input id="uploadButton" type="file" class="upload" name="images[]"/>
+        </div>
+        <p style="color: #5f5f5f; font-size: 12px;">最大上傳檔案大小：2 MB<br>
+        檔案類型限制：png、jpg、jpeg</p>
+        <div id="InsertImg" class="btn btn-primary hidden">插入圖片</div>
+    </script>
+    
+
+    
+
+
+
+ 
+    
+    
+			    <input type="hidden" name="id" value="10222376">
+				<input type="hidden" name="type" value="article">
+				<div class="mk-instruction mk-instruction--bottom mk-instruction--answer" style="display: block;">
+    <div class="mk-instruction__btn mk-instruction__btn--bottom">
+        <i class="fa fa-caret-down fa--spacing" aria-hidden="true"></i>Markdown <span>常用語法</span>
+    </div>
+  <div class="mk-instruction__content mk-instruction__content--bottom clearfix">
+    <ul class="list-unstyled">
+        <li class="spacing">```
+            <br>程式碼區塊
+            <br>```
+        </li>
+    </ul>
+    <ul class="list-unstyled">
+        <li>&gt; 引用</li>
+        <li>*斜體*</li>
+        <li>**粗體**</li>
+        <li>---分隔線</li>
+    </ul>
+    <ul class="list-unstyled">
+        <li># H1標題</li>
+        <li>## H2標題</li>
+        <li>### H3標題</li>
+    </ul>
+    <ul class="list-unstyled">
+        <li>- 列點1
+        <br>- 列點2
+        <br>- 列點3</li>
+        <li><a href="https://ithelp.ithome.com.tw/markdown" class="mk-instruction__content-link mk-instruction__content-link--bottom" target="_blank"><i class="fa fa-chevron-circle-right fa-fw " aria-hidden="true"></i>詳細說明</a></li>
+    </ul>
+  </div>
+</div>	        </div>
+	        <div class="reply-frame__btn">
+	    		<input class="btn btn-main btn-lg btn-right btn-reply" type="submit" value="留言">
+	    	</div>
+        </div>
+        </form>
+    </div>
+</div>
+
+
+                    </div>
+                                    </div>
+        
+
+    </div>
+    <div class="rightside">
+        <div class="trainee clearfix sidebox">
+    <div class="trainee__header">
+        <div class="trainee__title">
+            <i class="fa fa-exclamation-circle fa-fw"></i>新手任務尚未完成
+        </div>
+        <div class="trainee__arrowBtn">
+            <i class="fa fa-caret-down fa-fw"></i>
+        </div>
+    </div>
+    <div class="trainee__body">
+        <p class="trainee__desc">趕快完成其中5項新手任務即可升級！</p>
+        <ul class="list-unstyled trainee__list">
+                            <li class="trainee__item trainee__item--undo">
+                    <i class="fa fa-times-circle fa-fw trainee__item-icon"></i>
+                    完成「個人簡歷」
+                </li>
+                            <li class="trainee__item trainee__item--undo">
+                    <i class="fa fa-times-circle fa-fw trainee__item-icon"></i>
+                    發問／回答／發文：1次
+                </li>
+                            <li class="trainee__item trainee__item--undo">
+                    <i class="fa fa-times-circle fa-fw trainee__item-icon"></i>
+                    Like 一個「好問題/文章」
+                </li>
+                            <li class="trainee__item trainee__item--done">
+                    <i class="fa fa-check-circle fa-fw trainee__item-icon"></i>
+                    找到一個值得收藏的問題/文章按「收藏」
+                </li>
+                            <li class="trainee__item trainee__item--undo">
+                    <i class="fa fa-times-circle fa-fw trainee__item-icon"></i>
+                    哪一個回答令人激賞，Like 一個「好答案」
+                </li>
+                            <li class="trainee__item trainee__item--done">
+                    <i class="fa fa-check-circle fa-fw trainee__item-icon"></i>
+                    「追蹤」感興趣的問題/文章
+                </li>
+                            <li class="trainee__item trainee__item--done">
+                    <i class="fa fa-check-circle fa-fw trainee__item-icon"></i>
+                    「追蹤」一名優秀邦友，得知他的問答動態
+                </li>
+                            <li class="trainee__item trainee__item--undo">
+                    <i class="fa fa-times-circle fa-fw trainee__item-icon"></i>
+                    「追蹤」一個感興趣的Tag，累積領域知識
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+    <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__header ir-sidebox__header--ironman">
+        <img src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ironman9thsidebar.png" alt="" class="ir-sidebox__header-img">iT 邦幫忙鐵人賽
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+    </a>
+    <div class="ir-sidebox__body clearfix">
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--bottom">
+            累計文章數
+            <div class="ir-sidebox__countdown-num">13682<span class="ir-sidebox__countdown-unit"> 篇</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space ir-sidebox__countdown--bottom">
+            參賽組數
+            <div class="ir-sidebox__countdown-num">812<span class="ir-sidebox__countdown-unit"> 組</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown">
+            
+            
+
+            完賽人數
+                            <div class="ir-sidebox__countdown-num">382<span class="ir-sidebox__countdown-unit"> 人</span></div>
+            
+            
+           
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space">
+            團體組數
+            <div class="ir-sidebox__countdown-num">33<span class="ir-sidebox__countdown-unit"> 組</span></div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <div class="sidebox">
+        <div class="ir-sidebox__header">
+            鐵人賽得獎題目
+        </div>
+        <div class="sidebox__body clearfix">
+            <ul class="list-unstyled sidebox__list">
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20112829/ironman/2142?sc=iThelpR" target="_blank" class="sidebox__itemLink">Angular 元件庫 NG-ZORRO 基礎入門</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20118848/ironman/2682?sc=iThelpR" target="_blank" class="sidebox__itemLink">突破困境：資安開源工具應用</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20104201/ironman/2320?sc=iThelpR" target="_blank" class="sidebox__itemLink">成為 Modern PHPer</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20112550/ironman/2623?sc=iThelpR" target="_blank" class="sidebox__itemLink">金魚都能懂的這個網頁畫面怎麼切 - 金魚都能懂了你還怕學不會嗎</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20120327/ironman/2444?sc=iThelpR" target="_blank" class="sidebox__itemLink">其實我真的沒想過只是把服務丟上 kubernetes 就有這麼多問題只好來參加30天分享那些年我怎麼在 kubernetes 上踩雷各項服務</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20119550/ironman/2221?sc=iThelpR" target="_blank" class="sidebox__itemLink">Flutter---Google推出的跨平台框架，Android、iOS一起搞定</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20121135/ironman/2911?sc=iThelpR" target="_blank" class="sidebox__itemLink">介面設計如何讓新手與專家都容易使用？</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20119971/ironman/2254?sc=iThelpR" target="_blank" class="sidebox__itemLink">Towards Tensorflow 2.0</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20121042/ironman/2792?sc=iThelpR" target="_blank" class="sidebox__itemLink">分散式系統 - 在分散的世界中保持一致</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20111896/ironman/2181?sc=iThelpR" target="_blank" class="sidebox__itemLink">Android TDD 測試驅動開發</a>
+                    </li>
+                            </ul>
+            <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__link"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>前往鐵人賽</a>
+        </div>
+    </div>
+
+<div class="sidebox">
+    <div class="ir-sidebox__header">
+        鐵人賽熱門主題
+    </div>
+    <div class="sidebox__body clearfix">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20112271/ironman/2815?sc=iThelpR" target="_blank" class="sidebox__itemLink">iOS APP 使用Swift打造一個外送平台APP  (以foodpanda、Uber Eats為例) </a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20118848/ironman/2682?sc=iThelpR" target="_blank" class="sidebox__itemLink">突破困境：資安開源工具應用</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20040221/ironman/2236?sc=iThelpR" target="_blank" class="sidebox__itemLink">菜鳥工程師必修的 30 堂溝通課</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120536/ironman/2571?sc=iThelpR" target="_blank" class="sidebox__itemLink">Python 程式交易 30 天新手入門</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120166/ironman/2399?sc=iThelpR" target="_blank" class="sidebox__itemLink">Best Practice for DevOps on GitLab and GCP</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20103315/ironman/2668?sc=iThelpR" target="_blank" class="sidebox__itemLink">從 Hooks 開始，讓你的網頁 React 起來</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20111777/ironman/2767?sc=iThelpR" target="_blank" class="sidebox__itemLink">到日本當軟體工程師的入門指南</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120094/ironman/2296?sc=iThelpR" target="_blank" class="sidebox__itemLink">30天30碗平民魯肉飯完食!</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20106426/ironman/2136?sc=iThelpR" target="_blank" class="sidebox__itemLink">前端工程師用 javaScript 學演算法</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120633/ironman/2877?sc=iThelpR" target="_blank" class="sidebox__itemLink">&gt;&gt;寫程式太難了《30天讓你成為蛋糕師情人》</a>
+            </li>
+                    </ul>
+        <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__link"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>前往鐵人賽</a>
+    </div>
+</div>
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門問題
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196353" class="sidebox__itemLink">
+                        python 爬蟲
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196371" class="sidebox__itemLink">
+                        bat檔如何保護,例如綁定主機板或硬碟序號
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196382" class="sidebox__itemLink">
+                        關於5G產業
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196378" class="sidebox__itemLink">
+                        面試題討論
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196379" class="sidebox__itemLink">
+                        Angular,React,Vue選擇，或更好的建議？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196362" class="sidebox__itemLink">
+                        如何把Outlook封存的信找回來?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196352" class="sidebox__itemLink">
+                        NGINX網址優化設定問題?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196406" class="sidebox__itemLink">
+                        新手的我很多網頁文章越看越不懂
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196377" class="sidebox__itemLink">
+                        請問 多工 和 非同步 是一樣的嬤?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196398" class="sidebox__itemLink">
+                        請問無實體IP的鏡頭如何透過Server幫助讓使用者可以在網頁上看到影像串流?
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(4)"></script><!-- B2_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=B2~ithome_forum~1911B208" target="_blank"><img border="0" alt="." src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/1574848959_5dde49bfaf521.gif"></a><!-- B2_ithome_forum end -->
+	<div class="a19word">
+		<script type="text/javascript" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(5)"> </script><!-- T1_ithome_forum start --><ul><li><a href="https://itadapi.ithome.com.tw/media/click?q=T1~ithome_forum~1912T101" target="_blank">立即報名免費體驗SQL Server與K8s實作</a></li><li><a href="https://itadapi.ithome.com.tw/media/click?q=T1~ithome_forum~1912T103" target="_blank">12/17 Intel 邊緣運算解決方案高峰論壇，掌握市場發展脈動創造商機</a></li></ul><!-- T1_ithome_forum end -->
+	</div>
+</div>
+
+<div class="sidebox">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/ithelpfans/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=300&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fithelpfans%2F&amp;locale=zh_TW&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;width=300"><span style="vertical-align: bottom; width: 300px; height: 0px;"><iframe name="fd2a04a950bdf" width="300px" height="1000px" title="fb:page Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/page.html" style="border: none; visibility: visible; width: 300px; height: 0px;" class=""></iframe></span></div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        站方公告
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                <a href="https://ithelp.ithome.com.tw/announces/49" class="sidebox__itemLink">
+                    【iT邦幫忙鐵人賽的頒獎典禮】☀IT人的主場、鐵人的榮耀☀ 大家作伙來慶賀這一年鋼鐵般的歷練
+                </a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        熱門tag
+        <a href="https://ithelp.ithome.com.tw/tags" class="sidebox__moreLink">看更多<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/11th%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                11th鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2019%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2019鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2018%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2018鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2017%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2017鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/javascript" class="tag sidebox__tagList">
+                javascript
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows" class="tag sidebox__tagList">
+                windows
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows%20server" class="tag sidebox__tagList">
+                windows server
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/php" class="tag sidebox__tagList">
+                php
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/linux" class="tag sidebox__tagList">
+                linux
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88" class="tag sidebox__tagList">
+                程式設計
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%88%86%E4%BA%AB" class="tag sidebox__tagList">
+                分享
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8" class="tag sidebox__tagList">
+                資訊安全
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%81%B7%E5%A0%B4" class="tag sidebox__tagList">
+                職場
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86" class="tag sidebox__tagList">
+                專案管理
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/c%23" class="tag sidebox__tagList">
+                c#
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B7%A5%E4%BD%9C" class="tag sidebox__tagList">
+                工作
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/sql" class="tag sidebox__tagList">
+                sql
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/css" class="tag sidebox__tagList">
+                css
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E4%BC%BA%E6%9C%8D%E5%99%A8" class="tag sidebox__tagList">
+                伺服器
+            </a>
+            </div>
+</div>
+
+
+
+
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門回答
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196398" class="sidebox__itemLink">
+                        請問無實體IP的鏡頭如何透過Server幫助讓使用者可以在網頁上看到影像串流?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196378" class="sidebox__itemLink">
+                        面試題討論
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196379" class="sidebox__itemLink">
+                        Angular,React,Vue選擇，或更好的建議？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196406" class="sidebox__itemLink">
+                        新手的我很多網頁文章越看越不懂
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196390" class="sidebox__itemLink">
+                        在外面使用手機連接樹莓派
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196382" class="sidebox__itemLink">
+                        關於5G產業
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196364" class="sidebox__itemLink">
+                        如何取得列舉結果中的值
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196371" class="sidebox__itemLink">
+                        bat檔如何保護,例如綁定主機板或硬碟序號
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196377" class="sidebox__itemLink">
+                        請問 多工 和 非同步 是一樣的嬤?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196386" class="sidebox__itemLink">
+                        Excel 2013 如何貼 上顯示的值
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(6)"></script><!-- B3_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=B3~ithome_forum~1911B309" target="_blank"><img border="0" alt="." src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/1574302430_5dd5f2dee400f.gif"></a><!-- B3_ithome_forum end -->
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門文章
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229258" class="sidebox__itemLink">
+                        [遲]Day 19 DNS劫持
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229242" class="sidebox__itemLink">
+                        [遲]Day 18 網頁劫持 
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229220" class="sidebox__itemLink">
+                        AI 無人商店
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10228813" class="sidebox__itemLink">
+                        AI 無人車
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229253" class="sidebox__itemLink">
+                        【Day 23】#9 - Palindrome Number
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229195" class="sidebox__itemLink">
+                        JavaScript 的 if 條件
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229264" class="sidebox__itemLink">
+                        【Day 24】#1260 - Shift 2D Grid
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229226" class="sidebox__itemLink">
+                        單一職責原則，定義、解析與實踐
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229255" class="sidebox__itemLink">
+                        【小黑馬作業系統教室】(2) 大膽科學-如果電腦上沒有作業系統?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10228881" class="sidebox__itemLink">
+                        關於 Temporal table 
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        一週點數排行
+        <a href="https://ithelp.ithome.com.tw/point_rank/total" class="sidebox__moreLink">更多點數排行<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+        <ol class="list-unstyled sidebox__rank">
+
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20119546/profile" class="sidebox__rankItemLink">阿展展展 (eric211924)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20001787/profile" class="sidebox__rankItemLink">海綿寶寶 (antijava)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20105694/profile" class="sidebox__rankItemLink">小魚 (henrychang)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20101641/profile" class="sidebox__rankItemLink">浩瀚星空 (yoching)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20104001/profile" class="sidebox__rankItemLink">froce (froce)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20050647/profile" class="sidebox__rankItemLink">一級屠豬士 (hitomitanaka)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117259/profile" class="sidebox__rankItemLink">dragonH (jack61811)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117165/profile" class="sidebox__rankItemLink">listennn08 (listennn08)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20119662/profile" class="sidebox__rankItemLink">ckp6250 (ckp6250)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20026603/profile" class="sidebox__rankItemLink">raytracy (raytracy)</a>
+                </li>
+                    </ol>
+    </div>
+</div>    </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="a970">
+                    <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/serve(3)"></script><!-- B1_ithome_forum start --><a href="https://itadapi.ithome.com.tw/media/click?q=B1~ithome_forum~1911B109" target="_blank"><img border="0" alt="." src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/1574848862_5dde495eae72c.gif"></a><!-- B1_ithome_forum end -->
+                </div>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">電週文化事業版權所有、轉載必究 | Copyright © <a href="https://www.ithome.com.tw/" target="_blank" class="footer__link">iThome</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">刊登廣告</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">授權服務</a></li>
+                    <li><a href="mailto:ithelp@mail.ithome.com.tw" class="footer__link">服務信箱</a></li>
+                    <li><a href="https://www.ithome.com.tw/terms" target="_blank" class="footer__link">隱私權聲明與會員使用條款</a></li>
+                    <li><a href="https://ithelp.ithome.com.tw/guide" class="footer__link">iT邦幫忙使用說明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery.min.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery-ui.min.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/bootstrap.min.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/messenger.min.js.下載"></script>
+<script>
+    Messenger.options = {
+        extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left',
+        theme: 'block'
+    };
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    
+    window.Notification.TOKEN = getCookie("_token");
+</script>
+<script>
+    $(function(){
+        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
+            if (options.type.toLowerCase() !== "get" && !options.beforeSend) {
+                options.beforeSend = function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', 'werQJYkdemZ7PsrMCGYfa55GAK0Oe3KEBqUJ9WWN');
+                    }
+            }
+        });
+    });
+</script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/vue.min.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/sweetalert.min.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/event.js.下載"></script>
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/select2.full.min.js.下載"></script>
+
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/ImgPreview.js.下載"></script>
+<!-- highlight -->
+<script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/highlight.pack.js.下載"></script>
+<script>
+    $(function(){
+        $('pre code').each(function(i, block) {
+            $(block).attr('class');
+            hljs.highlightBlock(block);
+        });
+    })
+</script>
+<!--messenger, get cookie, token-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3355931-1']);
+  _gaq.push(['_trackPageview']);
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+
+
+
+    <div class="modal fade" id="AtUser" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title text-center">At</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="invite_person" class="control-label">輸入對方的帳號或暱稱</label>
+                        <input type="text" class="form-control modal-input" id="invite_person">
+                        <div id="editor_tagged_ids"></div>
+                    </div>
+                    <ul class="list-unstyled invitation">
+                        <li style="text-align: center">
+                            
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-main" data-dismiss="modal">關閉</a>
+                </div>
+            </div>
+        </div>
+    </div>
+            <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/simplemde.min.js.下載"></script>
+        <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery.iframe-transport.js.下載"></script>
+        <script src="./【Day 14】資料持久化 - RDBMS (1_4) - iT 邦幫忙__一起幫忙解決難題，拯救 IT 人的一天_files/jquery.fileupload.js.下載"></script>
+        <script>
+    /* github.com/NextStepWebs/simplemde-markdown-editor/blob/master/src/js/simplemde.js */
+    var Toolbar_Base = {
+        "bold": {
+            name: "bold",
+            action: SimpleMDE.toggleBold,
+            className: "fa fa-bold",
+            title: "粗體"
+        },
+        "italic": {
+            name: "italic",
+            action: SimpleMDE.toggleItalic,
+            className: "fa fa-italic",
+            title: "斜體"
+        },
+        "strikethrough": {
+            name: "strikethrough",
+            action: SimpleMDE.toggleStrikethrough,
+            className: "fa fa-strikethrough",
+            title: "Strikethrough"
+        },
+        "heading": {
+            name: "heading",
+            action: SimpleMDE.toggleHeadingSmaller,
+            className: "fa fa-header",
+            title: "Heading"
+        },
+        "heading-smaller": {
+            name: "heading-smaller",
+            action: SimpleMDE.toggleHeadingSmaller,
+            className: "fa fa-header fa-header-x fa-header-smaller",
+            title: "Smaller Heading"
+        },
+        "heading-bigger": {
+            name: "heading-bigger",
+            action: SimpleMDE.toggleHeadingBigger,
+            className: "fa fa-header fa-header-x fa-header-bigger",
+            title: "Bigger Heading"
+        },
+        "heading-1": {
+            name: "heading-1",
+            action: SimpleMDE.toggleHeading1,
+            className: "fa fa-header fa-header-x fa-header-1",
+            title: "H1"
+        },
+        "heading-2": {
+            name: "heading-2",
+            action: SimpleMDE.toggleHeading2,
+            className: "fa fa-header fa-header-x fa-header-2",
+            title: "H2"
+        },
+        "heading-3": {
+            name: "heading-3",
+            action: SimpleMDE.toggleHeading3,
+            className: "fa fa-header fa-header-x fa-header-3",
+            title: "H3"
+        },
+        "separator-1": {
+            name: "separator-1"
+        },
+        "code": {
+            name: "code",
+            action: SimpleMDE.toggleCodeBlock,
+            className: "fa fa-code",
+            title: "新增程式碼"
+        },
+        "quote": {
+            name: "quote",
+            action: SimpleMDE.toggleBlockquote,
+            className: "fa fa-quote-left",
+            title: "引用"
+        },
+        "unordered-list": {
+            name: "unordered-list",
+            action: SimpleMDE.toggleUnorderedList,
+            className: "fa fa-list-ul",
+            title: "項目符號清單"
+        },
+        "ordered-list": {
+            name: "ordered-list",
+            action: SimpleMDE.toggleOrderedList,
+            className: "fa fa-list-ol",
+            title: "編號清單"
+        },
+        "clean-block": {
+            name: "clean-block",
+            action: SimpleMDE.cleanBlock,
+            className: "fa fa-eraser fa-clean-block",
+            title: "Clean block"
+        },
+        "separator-2": {
+            name: "separator-2"
+        },
+        "link": {
+            name: "link",
+            action: SimpleMDE.drawLink,
+            className: "fa fa-link",
+            title: "插入連結"
+        },
+        "image": {
+            name: "image",
+            action: SimpleMDE.drawImage,
+            className: "fa fa-picture-o",
+            title: "插入圖片"
+        },
+        "table": {
+            name: "table",
+            action: SimpleMDE.drawTable,
+            className: "fa fa-table",
+            title: "插入表格"
+        },
+        "horizontal-rule": {
+            name: "horizontal-rule",
+            action: SimpleMDE.drawHorizontalRule,
+            className: "fa fa-minus",
+            title: "插入水平線"
+        },
+        "separator-3": {
+            name: "separator-3"
+        },
+        "preview": {
+            name: "preview",
+            action: SimpleMDE.togglePreview,
+            className: "mk__editor-pre no-disable",
+            title: "預覽"
+        },
+        "side-by-side": {
+            name: "side-by-side",
+            action: SimpleMDE.toggleSideBySide,
+            className: "fa fa-columns no-disable no-mobile",
+            title: "Toggle Side by Side"
+        },
+        "fullscreen": {
+            name: "fullscreen",
+            action: SimpleMDE.toggleFullScreen,
+            className: "fa fa-arrows-alt no-disable no-mobile",
+            title: "Toggle Fullscreen"
+        },
+        "separator-4": {
+            name: "separator-4"
+        },
+        "guide": {
+            name: "guide",
+            action: "https://simplemde.com/markdown-guide",
+            className: "fa fa-question-circle",
+            title: "Markdown Guide"
+        },
+        "separator-5": {
+            name: "separator-5"
+        },
+        "undo": {
+            name: "undo",
+            action: SimpleMDE.undo,
+            className: "fa fa-undo no-disable",
+            title: "復原"
+        },
+        "redo": {
+            name: "redo",
+            action: SimpleMDE.redo,
+            className: "fa fa-repeat no-disable",
+            title: "取消復原"
+        }
+    }
+
+    var Toolbar_YouTube = {
+        name: "YouTube",
+        title: "加入 YouTube 連結",
+        className: "fa fa-youtube",
+        action: function(editor) {
+            var cm = editor.codemirror;
+            swal({
+                title: "YouTube",
+                text: "加入 YouTube 連結",
+                content: "input",
+                animation: "slide-from-top",
+                inputPlaceholder: "https://www.youtube.com/watch?v=jl5oj2VLEws"
+            }).then(function (inputValue) {
+                if (inputValue === false) return false;
+                if (inputValue === "") {
+                    // swal.showInputError("You need to write something!");
+                }
+                var youtubeID = youtube_parser(inputValue);
+                cm.replaceSelection('[![Yes](https://img.youtube.com/vi/' + youtubeID + '/0.jpg)](https://www.youtube.com/watch?v=' + youtubeID + ')');
+                swal.close();
+            });
+        }
+    };
+
+    var Toolbar_BearMan = {
+        name: "BearMan",
+        title: "熊俠貼圖",
+        className: "fa fa-smile-o",
+        action: function(editor) {
+            var $BearManEmoticonList = $('#BearManEmoticonList');
+            $BearManEmoticonList.data('simplemde', editor);
+            swal({
+                title: "熊俠貼圖",
+                content: $.parseHTML('<div>' + $BearManEmoticonList.html() + '</div>')[0],
+                animation: "slide-from-top",
+            });
+        }
+    };
+
+    var Toolbar_UploadImage = {
+        name: "UploadImage",
+        title: "上傳圖片",
+        className: "fa fa-upload",
+        action: function(editor) {
+            swal({
+                title: "UploadImage",
+                content: $.parseHTML('<div>' + $('#UploadImageTemplate').html() + '</div>')[0],
+                animation: "slide-from-top",
+                timer: 0,
+                button: "取消",
+            });
+            // fileupload
+                $('#uploadButton').fileupload({
+                    url: 'https://ithelp.ithome.com.tw/api/upload',
+                    dataType: 'json',
+                    start: function (e, data) {
+                            $('#uploadText').text('上傳中(0%)');
+                            $('#uploadButton').prop('disabled', true);
+                    },
+                    progressall: function (e, data) {
+                        var progress = parseInt(data.loaded / data.total * 100, 10);
+                        $('#uploadText').text('上傳中('+progress+'%)');
+                    },
+                    done: function (e, data) {
+                        if (data.result.status === 'failed') {
+                            $('.swal-content').find('p').css({'color': 'red', 'font-size': '18px'}).text('您的圖檔大小或類型不符要求，請調整後重新上傳');
+                            return false
+                        } else {
+                        $('#uploadThumbnail').attr('src', data.result.url);
+                        $('#fileUpload').remove();
+                        $('#InsertImg').removeClass('hidden');
+                        }
+                    }
+                });    
+           
+            
+
+            // select image
+            $('#InsertImg').click(function(){
+                var imgLink = $('#uploadThumbnail').attr('src');
+                var imgMK = '![' + imgLink + ']('+ imgLink +')';
+                editor.codemirror.replaceSelection(imgMK);
+                swal.close();
+            });
+        }
+    }
+
+    var Toolbar_HELP = {
+        name: "help",
+        title: "Markdown 說明",
+        className: "mk__editor-guide",
+        action: function(editor) {
+            window.open('/markdown');
+        }
+    }
+
+    var Toolbar_AtUser = {
+        name: "AtUser",
+        title: "標記使用者",
+        className: "fa fa-user",
+        action: function(editor) {
+            var $AtUser = $('#AtUser');
+            $AtUser.data('simplemde', editor);
+            $('#AtUser').modal('show');
+        }
+    }
+
+    var Toolbar_Formula = {
+        name: "Formula",
+        title: "加入數學公式",
+        className: "fa fa-pie-chart",
+        action: function(editor) {
+            var cm = editor.codemirror;
+            swal({
+                title: "Formula",
+                text: "加入數學公式",
+                content: "input",
+                animation: "slide-from-top",
+                inputPlaceholder: "https://chart.googleapis.com/chart?cht=tx&chl=x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}"
+            }).then(function (inputValue) {
+                if (!!inputValue === false) {
+                     return false;
+                }
+                var link = 'https://chart.googleapis.com/chart?cht=tx&chl=' + encodeURIComponent(inputValue);
+                var mk_text = '![' + link  + '](' + link  + ')';
+                cm.replaceSelection(mk_text);
+                swal.close();
+            });
+        }
+    };
+
+    function youtube_parser(url){
+        var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+        var match = url.match(regExp);
+        return (match && match[7].length == 11) ? match[7] : url;
+    }
+
+    // At User
+    var API_URL = location.origin + '/api/';
+    var Vue_AtUser = new Vue({
+        el: '#AtUser',
+        data: {
+            result_text: '',
+            result_list: [],
+            is_loading: false
+        },
+        watch: {
+            result_text: function(val, oldVal) {
+                if (!!val) {
+                    this.getResultList(val);
+                } else {
+                    this.clearResult();
+                }
+            }
+        },
+        methods: {
+            clearResult: function() {
+                this.$set('result_list', []);
+                this.$set('result_text', '');
+            },
+            getResultList: function() {
+                var self = this;
+                var params = {
+                    term: self.$get('result_text'),
+                    tagged_ids: '[]'
+                };
+                self.$set('result_list', []);
+                self.$set('is_loading', true);
+                $.get(API_URL + 'talks/autocomplete', params, function(result){
+                    self.$set('result_list', result);
+                    self.$set('is_loading', false);
+                });
+            },
+            AtUserByID: function(user_account, user_id) {
+                var self = this;
+                var atMK = '[' + user_account + '](/users/' + user_id + ')';
+                var simplemde = $('#AtUser').data('simplemde');
+                simplemde.codemirror.replaceSelection(atMK);
+                $('#AtUser').modal('hide');
+
+                $(simplemde.element).parents('form').append(
+                    $('<input/>', {
+                        type: 'hidden',
+                        name: 'tagged_ids[]',
+                        value: user_id
+                    })
+                );
+            }
+        }
+    });
+
+    $('#AtUser').on('show.bs.modal', function (e) {
+        Vue_AtUser.clearResult();
+    });
+
+</script>
+
+        <script>
+            $(function() {
+                // hack fixed !!
+                $('[id="SimpleMDE"]').each(function(i, elm){
+                    $(elm).attr('id', 'SimpleMDE_' + i);
+                    var simplemde = new SimpleMDE({
+                        element: elm,
+                        previewRender: function(plainText, preview) {
+                            $.post("/api/preview", {
+                                description: plainText
+                            }, function(html) {
+                                preview.innerHTML = $('<div>' + html + '</div>').find('pre code').each(function(i, block) {
+                                    hljs.highlightBlock(block);
+                                }).end()[0].innerHTML;
+                            });
+
+                                return "Loading...";
+                            // return simplemde.markdown(plainText);
+                        },
+                        renderingConfig: {
+                            singleLineBreaks: false,
+                            codeSyntaxHighlighting: false,
+                        },
+                        spellChecker: false,
+                        status: true,
+                        parsingConfig: {
+                            allowAtxHeaderWithoutSpace: false,
+                            strikethrough: false,
+                            underscoresBreakWords: false,
+                        },
+                        toolbar: [
+                            Toolbar_Base['bold'],
+                            Toolbar_Base['italic'],
+                            Toolbar_Base['link'],
+                            Toolbar_Base['quote'],
+                            Toolbar_Base['code'],
+                            Toolbar_Base['image'],
+                            "|",
+                            Toolbar_UploadImage,
+                            Toolbar_Formula,
+                            Toolbar_Base['ordered-list'],
+                            Toolbar_Base['unordered-list'],
+                            Toolbar_Base['horizontal-rule'],
+                            Toolbar_YouTube,
+                            "|",
+                            Toolbar_Base['undo'],
+                            Toolbar_Base['redo'],
+                            Toolbar_BearMan,
+                            Toolbar_AtUser,
+                            "|",
+                            Toolbar_Base['preview'],
+                            // Toolbar_HELP
+                        ],
+                        indentWithTabs: false,
+                        tabSize: 4
+                    });
+                    $(elm).data('simplemde', simplemde);
+                });
+                // end
+
+                $('.mk-instruction--answer,.mk-instruction--question,.mk-instruction--article').show();
+
+                function youtube_parser(url){
+                    var regExp = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
+                    var match = url.match(regExp);
+                    return (match&&match[7].length==11)? match[7] : url;
+                }
+            });
+        </script>
+    
+
+</body></html>
