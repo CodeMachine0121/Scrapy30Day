@@ -7,7 +7,7 @@ from datetime import datetime
 hostname="localhost"
 user="postgres"
 db="Scrapy"
-password="James.2019"
+password="XXXX"
 
 conn_String = f'host={hostname} user={user} dbname={db} password={password}'
 conn = psycopg2.connect(conn_String)
