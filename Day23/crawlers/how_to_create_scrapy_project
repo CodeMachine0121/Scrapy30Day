@@ -1,0 +1,10 @@
+
+
+
+Create Project: scrapy startproject "projectname"
+
+check : tree /f
+
+add a crawer: scrapy genspider ithome ithome.com
+
+then Scrapy  will new a file "ithome.py"  in folder "spider" and "scrapy.Spider" 
