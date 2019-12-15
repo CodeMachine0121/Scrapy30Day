@@ -1,0 +1,2263 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<title>iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天</title>
+
+<meta name="description" content="iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人"/>
+<meta name="keywords" content="iT邦幫忙,iThome">
+<meta name="author" content="iThome">
+<meta property="og:site_name" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天"/>
+<meta property="og:url" content="https://ithelp.ithome.com.tw/articles"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="iT 邦幫忙::一起幫忙解決難題，拯救 IT 人的一天"/>
+<meta property="og:image" content="https://ithelp.ithome.com.tw/storage/image/fbpic.jpg"/>
+<meta property="og:description" content="iT 邦幫忙是 IT 領域的技術問答與分享社群，透過 IT 人互相幫忙，一起解決每天面臨的靠北時刻。一起來當 IT 人的超級英雄吧，拯救下一個卡關的 IT 人"/>
+<meta property="fb:app_id" content="137875859607921" />
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://ithelp.ithome.com.tw/storage/favicons/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="https://ithelp.ithome.com.tw/storage/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="https://ithelp.ithome.com.tw/storage/favicons/manifest.json">
+<link rel="mask-icon" href="https://ithelp.ithome.com.tw/storage/favicons/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="https://ithelp.ithome.com.tw/storage/favicons/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/bootstrap.min.css">
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/sweetalert.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/lib/select2/css/select2.min.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/google.css">
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/style.css?201909251100">
+<!-- highlight -->
+<link rel="stylesheet" href="https://ithelp.ithome.com.tw/css/railscasts.css">
+<!-- end -->
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+<!--messenger css-->
+    </head>
+
+<body>
+    <div class="header">
+    <div class="header__inner clearfix">
+        <h1 class="header__logo pull-left"><a href="/"><img src="https://ithelp.ithome.com.tw/storage/image/logo.svg" alt="iT邦幫忙" class="img-responsive"></a></h1>
+        <div class="header__promote">
+            <div class="a12word pull-right">
+                <div class="a12word__box">
+                    <script type="text/javascript" src="https://itadapi.ithome.com.tw/media/serve?type=T2&channel=ithome_forum&encoding=Utf8"> </script>
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="https://itadapi.ithome.com.tw/media/serve?type=T3&channel=ithome_forum&encoding=Utf8"> </script>
+                </div>
+                <div class="a12word__box">
+                    <script type="text/javascript" src="https://itadapi.ithome.com.tw/media/serve?type=T4&channel=ithome_forum&encoding=Utf8"> </script>
+                </div>
+            </div>
+
+            <div class="a970 pull-right">
+                <script src="https://itadapi.ithome.com.tw/media/serve?type=B1&channel=ithome_forum&encoding=Utf8"></script>
+            </div>
+        </div>
+    </div>
+
+    <nav class="menu">
+        <div class="menu__bg">
+            <div class="menu__container clearfix">
+                
+                <h1 class="menu__logo">
+                    <a href="/" class="menu__logo-link"><img src="https://ithelp.ithome.com.tw/storage/image/nav_logo.svg"  alt="iT邦幫忙"></a>
+                </h1>
+
+                                                                                                                
+                
+                <ul class="list-unstyled menu__left">
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/questions" class="menu__item-link  menu__item-link--pl">技術問答</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="menu__item-link  menu__item-link--active ">技術文章</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/articles?tab=job" class="menu__item-link  hidden-xs" >iT 徵才</a>
+                    </li>
+                    
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/tags" class="menu__item-link  hidden-xs" >Tag</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://ithelp.ithome.com.tw/talks" class="menu__item-link  hidden-xs" >聊天室</a>
+                    </li>
+                    <li class="menu__item menu__item--ironman">
+                        <a href="https://ithelp.ithome.com.tw/2020ironman?sc=nav" target="_blank" class="menu__item-link hidden-xs" >鐵人賽</a>
+                    </li>
+                </ul>
+                
+
+                                    
+                    <ul class="list-unstyled menu__right">
+                        <li class="menu__item">
+                            <div id="searchDropdown" class="menu__search-btn">
+                                <span class="menu__search-toggle"></span>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <a href="https://ithelp.ithome.com.tw/users/login" class="menu__item-link">登入/註冊</a>
+                        </li>
+                    </ul>
+                            </div>
+        </div>
+
+        
+        <div class="menu__dropform">
+            <div class="menu__container">
+                <form method="GET" action="https://ithelp.ithome.com.tw/search" accept-charset="UTF-8" role="search" class="clearfix">
+                    <div class="pull-left">
+                        <input name="search" type="text" class="menu__search-input" placeholder="搜尋主題、問題或人">
+
+                        <input type="radio" class="radio-input" name="tab" value="question" id="searchQA" checked/>
+                        <label for="searchQA" class="radio-label">問答</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="article" id="searchArticle"/>
+                        <label for="searchArticle" class="radio-label">文章</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="tag" id="searchTag"/>
+                        <label for="searchTag" class="radio-label">Tag</label>
+
+                        <input type="radio" class="radio-input" name="tab" value="user" id="searchID"/>
+                        <label for="searchID" class="radio-label">邦友</label>
+                    </div>
+                    <button type="submit" class="btn menu__dropform-btn">搜尋</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="menu__mask"></div>
+</div>
+
+    
+    
+    
+    	<div class="container index-top">
+	    <div class="row">
+	        <div class="col-md-12 clearfix">
+    			    
+
+    <div class="leftside">
+        <div class="a810">
+	<script src="https://itadapi.ithome.com.tw/media/serve?type=B7&channel=ithome_forum&encoding=Utf8"></script>
+</div>
+
+	<div class="index-announcement">
+		    <p><span class="announcement-badge">公告</span><a href="https://ithelp.ithome.com.tw/announces/49">【iT邦幫忙鐵人賽的頒獎典禮】☀IT人的主場、鐵人的榮耀☀ 大家作伙來慶賀這一年鋼鐵般的歷練</a></p>
+		</div>
+        <div class="tab-bottomline clearfix">
+            <h2 class="tab-title">技術文章</h2><a href="https://ithelp.ithome.com.tw/rss/articles/tech" target="_blank" class="rss-icon"><i class="fa fa-rss fa-fw"></i>RSS</a>
+           
+                        <ul class="tabs">
+                <li class="tabs-item"><a href="https://ithelp.ithome.com.tw/articles?tab=tech" class="tabs-item__link tabs-item__link--active">最新</a></li>
+                <li class="tabs-item"><a href="https://ithelp.ithome.com.tw/articles?tab=hot" class="tabs-item__link  tabs-item__link--hover">熱門</a></li>
+                <li class="tabs-item"><a href="https://ithelp.ithome.com.tw/articles?tab=ironman" class="tabs-item__link  tabs-item__link--hover">鐵人賽</a></li>
+                
+            </ul>
+                    </div>
+
+        <div class="board tabs-content">
+                        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229392" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229392" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229392" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">68</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229392" class="qa-list__title-link">C# 想要將程式改寫成可以用telnet連線執行</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    各位好
+小弟剛學程式設計
+有一個需求不知道該如何處理
+下面是溫度轉換，可以執行
+但是想要讓程式可以用telnet連線執行
+不知道該怎麼做
+google了一些so...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20123599" class="qa-list__info-link">
+
+                                                        johnqq
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-15 17:54:08" class="qa-list__info-time">2019-12-15</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229388" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229388" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229388" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">112</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229388" class="qa-list__title-link">[學習日記]九九乘法表</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    迴圈應用的練習，選了六角學院JS地下城九九乘法的題目來實作。
+重點放在JS上，切版部分就沒有花太多時間，選擇參考網路上其他現成已切好的稍作修改套用。
+首先宣告兩...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20123588" class="qa-list__info-link">
+
+                                                        yun_2311
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-15 01:43:09" class="qa-list__info-time">2019-12-15</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229386" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">2</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229386" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229386" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">140</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229386" class="qa-list__title-link">【小黑馬作業系統教室】(5) (Ch2)常見的OS結構</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    我是心原一馬，接下來整理第二章的內容，
+來講講幾個常見的作業系統架構吧。
+哦，對了，給對OS還不熟的同學，
+OS(operating system)是作業系統的...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20117114" class="qa-list__info-link">
+
+                                                        心原一馬
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-14 21:42:07" class="qa-list__info-time">2019-12-14</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229385" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229385" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229385" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">190</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229385" class="qa-list__title-link">[C#][ASP.NET] 如何在 .NET Framework 4.0 加入 Web Api</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    這篇是寫給想要在舊專案偷渡 Web Api 的朋友看的。  (́◕◞౪◟◕‵)*
+之前也寫過類似的文章 [C#][ASP.NET] Web API 開發心得 (...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20106865" class="qa-list__info-link">
+
+                                                        fysh711426
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-14 17:01:53" class="qa-list__info-time">2019-12-14</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229384" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229384" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229384" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">122</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229384" class="qa-list__title-link">React 中 setState 的踩雷與解決方式</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    挑戰 React 第十四篇
+上篇我們了解 setState 為非同步，而此篇將會舉一個setState踩雷的例子並且告訴大家如何改進。
+預先理解準備
+上篇程式碼...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121499" class="qa-list__info-link">
+
+                                                        tom_yukuan
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-14 16:46:24" class="qa-list__info-time">2019-12-14</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229382" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229382" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229382" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">173</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229382" class="qa-list__title-link">為何 React 官方推薦 setState 設定值而不使用 this.state設定？</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    挑戰 React 第十三篇
+
+
+上篇我們了解 state 可以在 component 裡改變資訊且實作。
+
+
+此篇將會用實作範例，證明修改 component...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121499" class="qa-list__info-link">
+
+                                                        tom_yukuan
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-13 22:24:25" class="qa-list__info-time">2019-12-13</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229379" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229379" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229379" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">188</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229379" class="qa-list__title-link">[C#] Word套版-DocX</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    1.新增專案
+2.載入組件DocX
+1.測試1.docx 裡面寫[$t1$],等等把[$t1$]做替換.
+private static void 黑大_來源是一...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20106764" class="qa-list__info-link">
+
+                                                        圓頭人
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-13 17:07:17" class="qa-list__info-time">2019-12-13</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229377" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229377" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229377" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">198</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229377" class="qa-list__title-link">Javascript 進階 3-5 運算子</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    
+運算子算是一個簡單的函式，他可以透過簡單的單詞或是符號，來對連接在前、後的值進行處理運算後，回傳一個值。
+
+以這個範例為說明，中間的等於就是 運算子，把右邊的...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121770" class="qa-list__info-link">
+
+                                                        odinhusky
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-13 14:26:33" class="qa-list__info-time">2019-12-13</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229375" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229375" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229375" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">135</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229375" class="qa-list__title-link">Javascript 進階 3-4 原始型別及物件型別</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    Javascript 有哪些型別
+var a, b, c, d;
+a = 1;
+a = &#039;文字&#039;;
+b = true;
+c = {};
+d = null;
+co...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121770" class="qa-list__info-link">
+
+                                                        odinhusky
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-13 12:08:50" class="qa-list__info-time">2019-12-13</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229374" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229374" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229374" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">130</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229374" class="qa-list__title-link">Javascript 進階 3-3 動態型別</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    Javascript 是動態型別的語言
+必須在執行階段才會賦予確立型別
+以下面的例子說明
+    var name = &#039;小明&#039;
+    
+    // 創造階...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121770" class="qa-list__info-link">
+
+                                                        odinhusky
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-13 11:31:38" class="qa-list__info-time">2019-12-13</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10215518" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10215518" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10215518" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">239</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10215518" class="qa-list__title-link">MySQL AES 256 加密與解密</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    之前介紹過MD5加密, 有以下兩種方式
+Java MD5
+MySQL MD5
+但MD5屬於不可逆, 我們仍有些資料需要能被解密
+例如: 電話, 電子郵件, 住址...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20119510" class="qa-list__info-link">
+
+                                                        Aiden
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 18:50:09" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229368" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229368" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229368" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">816</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                    <div class="ir-qa-list__status">
+                    
+                                            <span class="title-badge title-badge--ironman">鐵人賽</span>
+                    
+                    
+                                                                    <a href="https://ithelp.ithome.com.tw/2020ironman/security" target="_blank" class="group__badge group__badge--s group__badge--security">
+                            Security
+                        </a>
+                    
+                                                    
+                            
+                                                    
+                    </div>
+
+                    <div class="qa-list__series">
+                       <a href="https://ithelp.ithome.com.tw/users/20120392/ironman/2488" class="qa-list__series-link">不小心飛進資安之旅(學習筆記)</a> 系列 第
+                        <span class="qa-list__series-days">
+                        20</span> 篇
+                    </div>
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229368" class="qa-list__title-link">【遲】Day 20 Http/Https劫持</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    HTTP/HTTPS劫持
+　　網頁劫持往往只是在頁面上添加一個小視窗，但這小視窗並不屬於網頁本身的廣告，有時候無論你訪問什麼網頁，這小視窗都不會消失。
+網頁的顯...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20120392" class="qa-list__info-link">
+
+                                                            <img src="https://member.ithome.com.tw/avatars/141198?s=ithelp" class="ir-qa-list__avatar"/>
+
+                                                        羽洛燁
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 17:21:04" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229367" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">2</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229367" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229367" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">173</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229367" class="qa-list__title-link">Javascript 進階 3-2 ASI 自動插入分號</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    
+本篇介紹的ASI的作用機制
+ASI會自動在js的最後一段補上分號;
+但這樣的機制有時候也並非是好事。
+function callName () {
+    r...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121770" class="qa-list__info-link">
+
+                                                        odinhusky
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 17:16:38" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229364" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229364" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229364" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">272</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229364" class="qa-list__title-link">戰情儀錶板掌握這些技巧，老闆看完直誇好！</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    
+“今朝有酒今朝醉，報表不做不能睡，借問酒家何處有，報表還得編一宿。”
+
+這個心酸又好笑的打油詩是我一個做報表的朋友寫的，剛看到的時候覺得特別搞笑，仔細一讀又覺...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20093839" class="qa-list__info-link">
+
+                                                        lilylee
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 16:42:27" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229365" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229365" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229365" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">149</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229365" class="qa-list__title-link">Javascript 進階 3-1 陳述式與表達式</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    
+今天要介紹的是 陳述式與表達式
+兩者最大的不同就是在於 陳述式 並不會 回傳一個結果，而是執行特定的程式碼，例如使用 if/else、switch、try/c...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121770" class="qa-list__info-link">
+
+                                                        odinhusky
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 16:38:11" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229363" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229363" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229363" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">191</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229363" class="qa-list__title-link">教你學會建立一個行業的分析模型</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    就資料分析來說，個人覺得對於每一個行業來說都是非常重要的，也確實能帶來實際效果，比如說利用資料分析做會員的細分以進行精准化行銷。利用CRM系統來管理會員的生命週...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20093839" class="qa-list__info-link">
+
+                                                        lilylee
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 16:04:10" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229362" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">2</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229362" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229362" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">231</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229362" class="qa-list__title-link">物件導向設計原則：開放封閉原則，定義、解析與實踐</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    系列文章
+
+
+淺談物件導向 SOLID 原則對工程師的好處與如何影響能力
+
+
+再談 SOLID 原則，Why SOLID?
+
+
+物件導向設計原則：單一職責原則，...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121761" class="qa-list__info-link">
+
+                                                        WD.鴻
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 13:14:11" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229360" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229360" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229360" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">309</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229360" class="qa-list__title-link">用大數據告訴你：日本人現在到底有多瘋珍珠奶茶？</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    奶茶在日本現在可是非常的火，不管是學生一族，還是艱辛的上班族，甚至是黑幫成員，珍珠奶茶已經成為了絕對的焦點詞彙。如果只是一時興起想喝一杯奶茶，那我們可以直接搜索...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20093839" class="qa-list__info-link">
+
+                                                        lilylee
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-12 09:43:30" class="qa-list__info-time">2019-12-12</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229325" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229325" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229325" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">172</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229325" class="qa-list__title-link">BZOJ1218(二维前缀和)</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    1218: [HNOI2003]激光炸弹
+分析：经典的二维前缀和问题。在二维平面上，根据容斥原理，从(1,1)到(x,y)的二维前缀和。 同理，根据容斥原理，二...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20122183" class="qa-list__info-link">
+
+                                                        robbenwang0509
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-11 17:44:30" class="qa-list__info-time">2019-12-11</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229349" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229349" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229349" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">194</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229349" class="qa-list__title-link">解決 No module named ‘Box2D’ (安裝教學)</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    最近學校課程要使用gym的環境來實作BipedalWalkerHardcore-v2，在安裝Box2D環境的時候卡了很久，不管是 !pip install gy...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20118435" class="qa-list__info-link">
+
+                                                        wesley41616
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-11 14:35:09" class="qa-list__info-time">2019-12-11</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229345" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229345" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229345" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">480</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229345" class="qa-list__title-link">2020年快到了，你還在用接案平台接案？</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    2020年快到了，你還在用接案平台接案？
+‍提起接案，相信各位Freelancer/SOHO族都會想起網上各式各樣的Freelance平台，或是外包網。
+儘管此...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20123507" class="qa-list__info-link">
+
+                                                        freehunter
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-11 12:21:51" class="qa-list__info-time">2019-12-11</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229343" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229343" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229343" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">822</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                    <div class="ir-qa-list__status">
+                    
+                                            <span class="title-badge title-badge--ironman">鐵人賽</span>
+                    
+                    
+                                                                    <a href="https://ithelp.ithome.com.tw/2020ironman/software-dev" target="_blank" class="group__badge group__badge--s group__badge--software-dev">
+                            Software Development
+                        </a>
+                    
+                                                    
+                            
+                                                    
+                    </div>
+
+                    <div class="qa-list__series">
+                       <a href="https://ithelp.ithome.com.tw/users/20100009/ironman/2870" class="qa-list__series-link">LeetCode刷題日記</a> 系列 第
+                        <span class="qa-list__series-days">
+                        29</span> 篇
+                    </div>
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229343" class="qa-list__title-link">【Day 29】#84 - Largest Rectangle in Histogram</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    Given n non-negative integers representing the histogram&#039;s bar height where the...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20100009" class="qa-list__info-link">
+
+                                                            <img src="https://member.ithome.com.tw/avatars/107304?s=ithelp" class="ir-qa-list__avatar"/>
+
+                                                        hyj1116
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 22:49:45" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229340" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229340" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229340" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">385</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229340" class="qa-list__title-link">實測兩款工具之後，我還是選擇了這款地圖視覺化神器!</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    
+做過資料分析的人都知道，老闆最喜歡的莫過於資料視覺化，視覺化中最喜歡的莫過於地圖視覺化。但是想要做地圖視覺化也並非易事，對於大多數人來說，Excel一直都是首...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20093839" class="qa-list__info-link">
+
+                                                        lilylee
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 17:48:34" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229338" class="qa-condition  qa-condition--change ">
+                    <span class="qa-condition__count">1</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229338" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229338" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">320</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229338" class="qa-list__title-link">深入淺出，教你一步步實現數據分析入門、進階</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    最近有很多人在問資料分析的一些問題。關於資料分析到底應該怎麼學？如何快速入門，以及技術和業務之間的瓶頸如何突破？
+其實，要學資料分析之前，至少要瞭解一下資料分析...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20093839" class="qa-list__info-link">
+
+                                                        lilylee
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 17:36:44" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10228233" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10228233" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10228233" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">857</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                    <div class="ir-qa-list__status">
+                    
+                                            <span class="title-badge title-badge--ironman">鐵人賽</span>
+                    
+                    
+                                                                    <a href="https://ithelp.ithome.com.tw/2020ironman/software-dev" target="_blank" class="group__badge group__badge--s group__badge--software-dev">
+                            Software Development
+                        </a>
+                    
+                                                    
+                            
+                                                    
+                    </div>
+
+                    <div class="qa-list__series">
+                       <a href="https://ithelp.ithome.com.tw/users/20120024/ironman/2459" class="qa-list__series-link">後端基礎PHP+Mysql &amp; Laravel 30日養成計畫</a> 系列 第
+                        <span class="qa-list__series-days">
+                        31</span> 篇
+                    </div>
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10228233" class="qa-list__title-link">Day 31 用Laravel儲存圖片</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    第一步：安裝套件Intervention
+cd進專案目錄：
+$composer require intervention/image
+
+第二步：修改Larave...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20120024" class="qa-list__info-link">
+
+                                                            <img src="https://member.ithome.com.tw/avatars/140817?s=ithelp" class="ir-qa-list__avatar"/>
+
+                                                        阿寶
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 16:13:15" class="qa-list__info-time">2019-12-10</a>
+                    
+                                                                                ‧<a href="https://ithelp.ithome.com.tw/2020ironman/signup/team/78" class="ir-qa-list__team"><span class="team-badge">團隊</span>好想工作室 v3.0</a>
+                                                                </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10228790" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10228790" class="qa-condition  qa-condition--had-answer ">
+                    <span class="qa-condition__count">2</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10228790" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">192</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10228790" class="qa-list__title-link">java 沒辦法回傳字串</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    1.來源:java8技術手冊
+
+2.問題描述:
+當運行程式時，結果為下列程式碼，程式該如何修改才能得到字串形式的結果?
+My hand is CardGame....
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20121695" class="qa-list__info-link">
+
+                                                        qs2366
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 16:06:44" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229312" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229312" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229312" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">207</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229312" class="qa-list__title-link">【文科生都能懂的小黑馬作業系統教室】(4) (Ch1)特權指令與系統保謢</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    我是心原一馬，繼續給大家普及作業系統的概念囉。
+上一篇: 【文科生都能懂的小黑馬作業系統教室】(3) (Ch1)簡介作業系統演進; interrupt與Time...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20117114" class="qa-list__info-link">
+
+                                                        心原一馬
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 15:43:33" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229200" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229200" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229200" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">156</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229200" class="qa-list__title-link">[Laravel] 從url下載檔案 </a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    Laravel
+前言
+目的是將前端看到的 url圖片儲存在本機 sever。
+讀取圖片
+目前有兩種做法可以取得圖片：file_get_contents 和 fo...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20102155" class="qa-list__info-link">
+
+                                                        SarahCheng
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 15:26:47" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229332" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229332" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229332" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">152</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229332" class="qa-list__title-link">(一) NAO(V5) 機器人初始環境設定</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    本篇是為了讓實驗室的其他人知道如何使用NAO機器人而寫，只會寫重要的部分，官網有寫的會直接貼網址，因實驗室的NAO機器人為V5版本，只會提到V5的用法(也沒錢買...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20123336" class="qa-list__info-link">
+
+                                                        qwe111845
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 14:19:03" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+            
+        <div class="qa-list">
+            <div class="qa-list__condition">
+                <a href="https://ithelp.ithome.com.tw/articles/10229333" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">Like</span></a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229333" class="qa-condition ">
+                    <span class="qa-condition__count">0</span>
+                    <span class="qa-condition__text">留言</span>
+                </a>
+                <a href="https://ithelp.ithome.com.tw/articles/10229333" class="qa-condition   qa-condition--change ">
+                    <span class="qa-condition__count">412</span>
+                    <span class="qa-condition__text">瀏覽</span>
+                </a>
+            </div>
+            <div class="qa-list__content">
+
+                
+                                
+                <h3 class="qa-list__title">
+                    
+                                                            <a href="https://ithelp.ithome.com.tw/articles/10229333" class="qa-list__title-link">使用 Postgresql 展示資料庫集合操作</a>
+                </h3>
+                
+                <p class="qa-list__desc">
+                    -- 使用 Postgresql 展示資料庫集合操作
+-- 在 .psqlrc 中設定 \pset null &#039;¤&#039;
+-- 將 NULL 顯示為  ¤ , 以利...
+                    
+                </p>
+                
+                
+
+                <div class="qa-list__info">
+                   
+                                            <a href="https://ithelp.ithome.com.tw/users/20050647" class="qa-list__info-link">
+
+                                                        一級屠豬士
+                        </a>
+                                         ‧ 
+                    <a title="2019-12-10 12:54:28" class="qa-list__info-time">2019-12-10</a>
+                    
+                                    </div>
+            </div>
+        </div>
+                <div class="text-center tabs-pagination--border">
+                <ul class="pagination">
+        
+                    <li class="disabled"><span>上一頁</span></li>
+        
+        
+                    
+            
+            
+                                                                        <li class="active"><span>1</span></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=2">2</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=3">3</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=4">4</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=5">5</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=6">6</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=7">7</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=8">8</a></li>
+                                                                    
+                            <li class=" disabled"><span>...</span></li>
+            
+            
+                                
+            
+            
+                                                                        <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=2015">2015</a></li>
+                                                                                <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=2016">2016</a></li>
+                                                        
+        
+                    <li><a href="https://ithelp.ithome.com.tw/articles?tab=tech&amp;page=2" rel="next">下一頁</a></li>
+            </ul>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="rightside">
+        <div class="sidebox">
+    <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__header ir-sidebox__header--ironman">
+        <img src="https://ithelp.ithome.com.tw/storage/image/ironman9thsidebar.png" alt="" class="ir-sidebox__header-img">iT 邦幫忙鐵人賽
+        <i class="fa fa-chevron-circle-right" aria-hidden="true"></i>
+    </a>
+    <div class="ir-sidebox__body clearfix">
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--bottom">
+            累計文章數
+            <div class="ir-sidebox__countdown-num">13678<span class="ir-sidebox__countdown-unit"> 篇</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space ir-sidebox__countdown--bottom">
+            參賽組數
+            <div class="ir-sidebox__countdown-num">812<span class="ir-sidebox__countdown-unit"> 組</span></div>
+
+        </div>
+        <div class="ir-sidebox__countdown">
+            
+            
+
+            完賽人數
+                            <div class="ir-sidebox__countdown-num">382<span class="ir-sidebox__countdown-unit"> 人</span></div>
+            
+            
+           
+        </div>
+        <div class="ir-sidebox__countdown ir-sidebox__countdown--space">
+            團體組數
+            <div class="ir-sidebox__countdown-num">33<span class="ir-sidebox__countdown-unit"> 組</span></div>
+            
+        </div>
+    </div>
+</div>
+
+
+    <div class="sidebox">
+        <div class="ir-sidebox__header">
+            鐵人賽得獎題目
+        </div>
+        <div class="sidebox__body clearfix">
+            <ul class="list-unstyled sidebox__list">
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20112550/ironman/2799?sc=iThelpR" target="_blank" class="sidebox__itemLink">金魚都能懂的 CSS 選取器 - 金魚都能懂了你還怕學不會嗎</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20111896/ironman/2181?sc=iThelpR" target="_blank" class="sidebox__itemLink">Android TDD 測試驅動開發</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20117586/ironman/2617?sc=iThelpR" target="_blank" class="sidebox__itemLink">重新認識 CSS</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20104132/ironman/2921?sc=iThelpR" target="_blank" class="sidebox__itemLink">試著把切版專案升級到 gulp4.0 吧</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20104201/ironman/2320?sc=iThelpR" target="_blank" class="sidebox__itemLink">成為 Modern PHPer</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20107875/ironman/2209?sc=iThelpR" target="_blank" class="sidebox__itemLink">爬蟲在手、資料我有 - 30 天 Scrapy 爬蟲實戰</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20013608/ironman/2539?sc=iThelpR" target="_blank" class="sidebox__itemLink">生活資安五四三！從生活周遭看風險與資訊安全～番外篇</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20121111/ironman/2861?sc=iThelpR" target="_blank" class="sidebox__itemLink">前端工程師的 Flutter 新手村挑戰</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20111948/ironman/2837?sc=iThelpR" target="_blank" class="sidebox__itemLink">React + D3 的正確姿勢</a>
+                    </li>
+                                    <li class="sidebox__item">
+                        <a href="https://ithelp.ithome.com.tw/users/20119550/ironman/2221?sc=iThelpR" target="_blank" class="sidebox__itemLink">Flutter---Google推出的跨平台框架，Android、iOS一起搞定</a>
+                    </li>
+                            </ul>
+            <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__link"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>前往鐵人賽</a>
+        </div>
+    </div>
+
+<div class="sidebox">
+    <div class="ir-sidebox__header">
+        鐵人賽熱門主題
+    </div>
+    <div class="sidebox__body clearfix">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20112271/ironman/2815?sc=iThelpR" target="_blank" class="sidebox__itemLink">iOS APP 使用Swift打造一個外送平台APP  (以foodpanda、Uber Eats為例) </a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20118848/ironman/2682?sc=iThelpR" target="_blank" class="sidebox__itemLink">突破困境：資安開源工具應用</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20040221/ironman/2236?sc=iThelpR" target="_blank" class="sidebox__itemLink">菜鳥工程師必修的 30 堂溝通課</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120536/ironman/2571?sc=iThelpR" target="_blank" class="sidebox__itemLink">Python 程式交易 30 天新手入門</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120166/ironman/2399?sc=iThelpR" target="_blank" class="sidebox__itemLink">Best Practice for DevOps on GitLab and GCP</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20103315/ironman/2668?sc=iThelpR" target="_blank" class="sidebox__itemLink">從 Hooks 開始，讓你的網頁 React 起來</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20111777/ironman/2767?sc=iThelpR" target="_blank" class="sidebox__itemLink">到日本當軟體工程師的入門指南</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120094/ironman/2296?sc=iThelpR" target="_blank" class="sidebox__itemLink">30天30碗平民魯肉飯完食!</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20106426/ironman/2136?sc=iThelpR" target="_blank" class="sidebox__itemLink">前端工程師用 javaScript 學演算法</a>
+            </li>
+                        <li class="sidebox__item">
+                
+
+                <a href="https://ithelp.ithome.com.tw/users/20120633/ironman/2877?sc=iThelpR" target="_blank" class="sidebox__itemLink">&gt;&gt;寫程式太難了《30天讓你成為蛋糕師情人》</a>
+            </li>
+                    </ul>
+        <a href="https://ithelp.ithome.com.tw/2020ironman?sc=iThelpR" target="_blank" class="ir-sidebox__link"><i class="fa fa-fw fa-chevron-circle-right" aria-hidden="true"></i>前往鐵人賽</a>
+    </div>
+</div>
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門問題
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196428" class="sidebox__itemLink">
+                        Mac 不關機？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196462" class="sidebox__itemLink">
+                        趣味SQL 不出現等號(=) 的查詢方式
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196481" class="sidebox__itemLink">
+                        當今組合語言應用度是不是相對狹窄？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196437" class="sidebox__itemLink">
+                        win10開機問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196441" class="sidebox__itemLink">
+                        重複開機
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196433" class="sidebox__itemLink">
+                        VM 加退 CPU 熱插拔，可乎?
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196479" class="sidebox__itemLink">
+                        趣味SQL 排排站吃菓菓
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196429" class="sidebox__itemLink">
+                        win7內建備份和ghost的問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196448" class="sidebox__itemLink">
+                        商務大樓訪客系統及門禁系統硬體規劃
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196521" class="sidebox__itemLink">
+                        web伺服器取得樹莓派數據
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="https://itadapi.ithome.com.tw/media/serve?type=B2&channel=ithome_forum&encoding=Utf8"></script>
+	<div class="a19word">
+		<script type="text/javascript" src="https://itadapi.ithome.com.tw/media/serve?type=T1&channel=ithome_forum&encoding=Utf8"> </script>
+	</div>
+</div>
+
+<div class="sidebox">
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.5";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+
+	<div class="fb-page" data-href="https://www.facebook.com/ithelpfans/" data-width="300" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ithelpfans/"><a href="https://www.facebook.com/ithelpfans/">IT邦幫忙</a></blockquote></div></div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        站方公告
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                        <li class="sidebox__item">
+                <a href="https://ithelp.ithome.com.tw/announces/49" class="sidebox__itemLink">
+                    【iT邦幫忙鐵人賽的頒獎典禮】☀IT人的主場、鐵人的榮耀☀ 大家作伙來慶賀這一年鋼鐵般的歷練
+                </a>
+            </li>
+                    </ul>
+    </div>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        熱門tag
+        <a href="https://ithelp.ithome.com.tw/tags" class="sidebox__moreLink">看更多<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/11th%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                11th鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2019%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2019鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2018%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2018鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/2017%E9%90%B5%E4%BA%BA%E8%B3%BD" class="tag sidebox__tagList">
+                2017鐵人賽
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/javascript" class="tag sidebox__tagList">
+                javascript
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows" class="tag sidebox__tagList">
+                windows
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/windows%20server" class="tag sidebox__tagList">
+                windows server
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/php" class="tag sidebox__tagList">
+                php
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/linux" class="tag sidebox__tagList">
+                linux
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E7%A8%8B%E5%BC%8F%E8%A8%AD%E8%A8%88" class="tag sidebox__tagList">
+                程式設計
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%88%86%E4%BA%AB" class="tag sidebox__tagList">
+                分享
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%B3%87%E8%A8%8A%E5%AE%89%E5%85%A8" class="tag sidebox__tagList">
+                資訊安全
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E8%81%B7%E5%A0%B4" class="tag sidebox__tagList">
+                職場
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B0%88%E6%A1%88%E7%AE%A1%E7%90%86" class="tag sidebox__tagList">
+                專案管理
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/c%23" class="tag sidebox__tagList">
+                c#
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E5%B7%A5%E4%BD%9C" class="tag sidebox__tagList">
+                工作
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/sql" class="tag sidebox__tagList">
+                sql
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/css" class="tag sidebox__tagList">
+                css
+            </a>
+                    <a href="https://ithelp.ithome.com.tw/tags/questions/%E4%BC%BA%E6%9C%8D%E5%99%A8" class="tag sidebox__tagList">
+                伺服器
+            </a>
+            </div>
+</div>
+
+
+
+
+
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門回答
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196481" class="sidebox__itemLink">
+                        當今組合語言應用度是不是相對狹窄？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196428" class="sidebox__itemLink">
+                        Mac 不關機？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196437" class="sidebox__itemLink">
+                        win10開機問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196479" class="sidebox__itemLink">
+                        趣味SQL 排排站吃菓菓
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196444" class="sidebox__itemLink">
+                        php foreach 輸出的資料分隔加顏色的代碼
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196462" class="sidebox__itemLink">
+                        趣味SQL 不出現等號(=) 的查詢方式
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196521" class="sidebox__itemLink">
+                        web伺服器取得樹莓派數據
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196527" class="sidebox__itemLink">
+                        PHP  變數問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196429" class="sidebox__itemLink">
+                        win7內建備份和ghost的問題
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/questions/10196438" class="sidebox__itemLink">
+                        Visual Studio C# 版本問題
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+	<script src="https://itadapi.ithome.com.tw/media/serve?type=B3&channel=ithome_forum&encoding=Utf8"></script>
+</div>
+
+
+<div class="sidebox">
+    <div class="sidebox__header">
+        熱門文章
+    </div>
+    <div class="sidebox__body">
+        <ul class="list-unstyled sidebox__list">
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229295" class="sidebox__itemLink">
+                        AI 未來發展趨勢(下)
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10228233" class="sidebox__itemLink">
+                        Day 31 用Laravel儲存圖片
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229343" class="sidebox__itemLink">
+                        【Day 29】#84 - Largest Rectangle in Histogram
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229368" class="sidebox__itemLink">
+                        【遲】Day 20 Http/Https劫持
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229321" class="sidebox__itemLink">
+                        【Day 28】#70 - Climbing Stairs
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229345" class="sidebox__itemLink">
+                        2020年快到了，你還在用接案平台接案？
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229333" class="sidebox__itemLink">
+                        使用 Postgresql 展示資料庫集合操作
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229340" class="sidebox__itemLink">
+                        實測兩款工具之後，我還是選擇了這款地圖視覺化神器!
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229338" class="sidebox__itemLink">
+                        深入淺出，教你一步步實現數據分析入門、進階
+                    </a>
+                </li>
+                            <li class="sidebox__item">
+                    <a href="https://ithelp.ithome.com.tw/articles/10229360" class="sidebox__itemLink">
+                        用大數據告訴你：日本人現在到底有多瘋珍珠奶茶？
+                    </a>
+                </li>
+                    </ul>
+    </div>
+</div>
+
+<div class="sidebox">
+    <div class="sidebox__header clearfix">
+        一週點數排行
+        <a href="https://ithelp.ithome.com.tw/point_rank/total" class="sidebox__moreLink">更多點數排行<i class="fa fa-caret-right fa-fw"></i></a>
+    </div>
+    <div class="sidebox__body">
+        <ol class="list-unstyled sidebox__rank">
+
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20119546/profile" class="sidebox__rankItemLink">阿展展展 (eric211924)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20101641/profile" class="sidebox__rankItemLink">浩瀚星空 (yoching)</a>
+                </li>
+                            <li class="sidebox__rankItem  sidebox__rankItem--bgyellow  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20001787/profile" class="sidebox__rankItemLink">海綿寶寶 (antijava)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20105694/profile" class="sidebox__rankItemLink">小魚 (henrychang)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20026603/profile" class="sidebox__rankItemLink">raytracy (raytracy)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117259/profile" class="sidebox__rankItemLink">dragonH (jack61811)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20119662/profile" class="sidebox__rankItemLink">ckp6250 (ckp6250)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20117139/profile" class="sidebox__rankItemLink">雷伊 (amurorei)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20109232/profile" class="sidebox__rankItemLink">marlin12 (marlin12)</a>
+                </li>
+                            <li class="sidebox__rankItem  ">
+                    <a href="https://ithelp.ithome.com.tw/users/20104001/profile" class="sidebox__rankItemLink">froce (froce)</a>
+                </li>
+                    </ol>
+    </div>
+</div>    </div>
+	        </div>
+	    </div>
+	</div>
+
+        <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="a970">
+                    <script src="https://itadapi.ithome.com.tw/media/serve?type=B1&channel=ithome_forum&encoding=Utf8"></script>
+                </div>
+                <ul class="list-inline footer__menu">
+                    <li class="footer__item">電週文化事業版權所有、轉載必究 | Copyright © <a href="https://www.ithome.com.tw/" target="_blank" class="footer__link">iThome</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">刊登廣告</a></li>
+                    <li><a href="https://www.ithome.com.tw/aboutus/" target="_blank" class="footer__link">授權服務</a></li>
+                    <li><a href="mailto:ithelp@mail.ithome.com.tw" class="footer__link">服務信箱</a></li>
+                    <li><a href="https://www.ithome.com.tw/terms" target="_blank" class="footer__link">隱私權聲明與會員使用條款</a></li>
+                    <li><a href="https://ithelp.ithome.com.tw/guide" class="footer__link">iT邦幫忙使用說明</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/messenger/1.4.2/js/messenger.min.js"></script>
+<script>
+    Messenger.options = {
+        extraClasses: 'messenger-fixed messenger-on-bottom messenger-on-left',
+        theme: 'block'
+    };
+
+    function getCookie(name) {
+        var arr, reg = new RegExp("(^| )" + name + "=([^;]*)(;|$)");
+
+        if (arr = document.cookie.match(reg))
+            return unescape(arr[2]);
+        else
+            return null;
+    }
+    
+    window.Notification.TOKEN = getCookie("_token");
+</script>
+<script>
+    $(function(){
+        $.ajaxPrefilter(function(options, originalOptions, jqXHR){
+            if (options.type.toLowerCase() !== "get" && !options.beforeSend) {
+                options.beforeSend = function(xhr) {
+                        xhr.setRequestHeader('X-CSRF-TOKEN', 'lNP58c1dvVpcxT6E55ZgdV6GcIf3YvHTUg1reZ8j');
+                    }
+            }
+        });
+    });
+</script>
+<script src="https://ithelp.ithome.com.tw/js/lib/vue.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/lib/sweetalert.min.js"></script>
+<script src="https://ithelp.ithome.com.tw/js/event.js?20180530"></script>
+<script src="https://ithelp.ithome.com.tw/lib/select2/js/select2.full.min.js"></script>
+
+<script src="https://ithelp.ithome.com.tw/js/ImgPreview.js"></script>
+<!-- highlight -->
+<script src="https://ithelp.ithome.com.tw/js/highlight.pack.js"></script>
+<script>
+    $(function(){
+        $('pre code').each(function(i, block) {
+            $(block).attr('class');
+            hljs.highlightBlock(block);
+        });
+    })
+</script>
+<!--messenger, get cookie, token-->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3355931-1']);
+  _gaq.push(['_trackPageview']);
+ (function() {
+   var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
+</script>
+
+
+
+    <div class="modal fade" id="AtUser" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title text-center">At</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="invite_person" class="control-label">輸入對方的帳號或暱稱</label>
+                        <input type="text" class="form-control modal-input" id="invite_person" v-model="result_text" debounce="500">
+                        <div id="editor_tagged_ids"></div>
+                    </div>
+                    <ul class="list-unstyled invitation">
+                        <li style="text-align: center">
+                            <template v-if="!!result_text && !result_list.length && is_loading">
+                                Loading
+                            </template>
+                            <template v-if="!!result_text && !result_list.length && !is_loading">
+                                找不到結果。
+                            </template>
+                        </li>
+                        <li class="invitation-list" v-for="result in result_list">
+                            <img src="https://member.ithome.com.tw/avatars/{{ result.center_id }}?s=ithelp" style="float: left; margin-left: 10px; width: 48px; height: 48px;">
+                            <div class="invitation-list__content clearfix">
+                                <a class="btn btn-main invitation-list__btn" @click="AtUserByID(result.label, result.id)">標記</a>
+                                <div><a href="#" class="invitation-list__name">{{ result.label }}</a></div>
+                                <div><a href="#" class="invitation-list__account">{{ result.account }}</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <a type="button" class="btn btn-main" data-dismiss="modal">關閉</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+
+</html>
